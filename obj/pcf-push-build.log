@@ -1,4 +1,4 @@
-﻿Build started 3/24/2024 5:59:19 PM.
+﻿Build started 3/24/2024 8:01:36 PM.
 Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\dotnet.exe"
        MSBuild executable path = "C:\Program Files\dotnet\sdk\6.0.413\MSBuild.dll"
        Command line arguments = "C:\Program Files\dotnet\sdk\6.0.413\MSBuild.dll -maxcpucount -verbosity:m -restore -consoleloggerparameters:Summary -target:Rebuild --property:PcfForceUpdate=true -property:Configuration=Debug -nologo -verbosity:minimal /bl:C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\pcf-push-build.binlog -fileLoggerParameters:LogFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\pcf-push-build.log;Verbosity=detailed;Encoding=UTF-8 -distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,C:\Program Files\dotnet\sdk\6.0.413\dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,C:\Program Files\dotnet\sdk\6.0.413\dotnet.dll"
@@ -129,11 +129,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "RemoveDuplicates".
        Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MSBuild"
-         Task Parameter:Targets=_IsProjectRestoreSupported
-         Task Parameter:SkipNonexistentTargets=True
-         Task Parameter:BuildInParallel=True
-         Task Parameter:Properties=ExcludeRestorePackageImports=true
          Task Parameter:Projects=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=_IsProjectRestoreSupported
+         Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
          Global Properties:
            ExcludeRestorePackageImports=true
      0>Importing project "C:\Program Files\dotnet\sdk\6.0.413\Current\Microsoft.Common.props" into project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" at (7,3).
@@ -288,17 +288,17 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          Determining projects to restore...
        Done executing task "NuGetMessageTask".
        Task "MSBuild"
-         Task Parameter:Targets=_GenerateRestoreProjectPathWalk
-         Task Parameter:SkipNonexistentTargets=True
-         Task Parameter:BuildInParallel=True
-         Task Parameter:SkipNonexistentProjects=true
-         Task Parameter:Properties=ExcludeRestorePackageImports=true
          Task Parameter:
              Projects=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:SkipNonexistentProjects=true
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=_GenerateRestoreProjectPathWalk
+         Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
          Global Properties:
            ExcludeRestorePackageImports=true
      1>Project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1) is building "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1:3) on node 1 (_GenerateRestoreProjectPathWalk target(s)).
@@ -332,12 +332,12 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:3>Done building target "_GenerateRestoreProjectPathItems" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:3>Target "_GenerateRestoreProjectPathWalk" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (entry point):
        Task "MSBuild"
-         Task Parameter:Targets=_GenerateRestoreProjectPathWalk
-         Task Parameter:SkipNonexistentTargets=True
-         Task Parameter:BuildInParallel=True
-         Task Parameter:SkipNonexistentProjects=true
-         Task Parameter:Properties=ExcludeRestorePackageImports=true
          Task Parameter:Projects=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
+         Task Parameter:SkipNonexistentProjects=true
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=_GenerateRestoreProjectPathWalk
+         Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
          Global Properties:
            ExcludeRestorePackageImports=true
      0>Importing project "C:\Program Files\dotnet\sdk\6.0.413\Current\Microsoft.Common.props" into project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" at (7,3).
@@ -465,11 +465,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
      2>Done building target "_GenerateRestoreProjectPathItems" in project "pcfaggrid.pcfproj".
      2>Target "_GenerateRestoreProjectPathWalk" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (entry point):
        Task "MSBuild"
-         Task Parameter:Targets=_GenerateRestoreProjectPathWalk
-         Task Parameter:SkipNonexistentTargets=True
-         Task Parameter:BuildInParallel=True
          Task Parameter:SkipNonexistentProjects=true
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=_GenerateRestoreProjectPathWalk
          Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
        Done executing task "MSBuild".
        Task "MSBuild" skipped, due to false condition; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) was evaluated as ( 'true' != 'true' ).
        Added Item(s): _GenerateRestoreProjectPathWalkOutputs=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
@@ -529,11 +529,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
        Done executing task "RemoveDuplicates".
        Task "MSBuild"
-         Task Parameter:Targets=_IsProjectRestoreSupported
-         Task Parameter:SkipNonexistentTargets=True
-         Task Parameter:BuildInParallel=True
-         Task Parameter:SkipNonexistentProjects=true
-         Task Parameter:Properties=ExcludeRestorePackageImports=true
          Task Parameter:
              Projects=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
@@ -544,6 +539,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:SkipNonexistentProjects=true
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=_IsProjectRestoreSupported
+         Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
          Global Properties:
            ExcludeRestorePackageImports=true
      1>Project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1) is building "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1:4) on node 1 (_IsProjectRestoreSupported target(s)).
@@ -608,9 +608,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        MSBuildSourceTargetName=_IsProjectRestoreSupported
                        OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
        Task "MSBuild"
-         Task Parameter:Targets=_GenerateRestoreGraphProjectEntry
-         Task Parameter:BuildInParallel=True
-         Task Parameter:Properties=ExcludeRestorePackageImports=true
          Task Parameter:
              Projects=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
@@ -621,6 +618,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:Targets=_GenerateRestoreGraphProjectEntry
+         Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
          Global Properties:
            ExcludeRestorePackageImports=true
      1>Project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1) is building "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (2:3) on node 1 (_GenerateRestoreGraphProjectEntry target(s)).
@@ -632,7 +632,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: CollectPackageReferencesContinueOnError=false
        Using "CheckForDuplicateNuGetItemsTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "CheckForDuplicateNuGetItemsTask"
-         Task Parameter:ItemName=PackageReference
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
          Task Parameter:
              Items=
                  Microsoft.PowerApps.MSBuild.Pcf
@@ -640,8 +640,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  Microsoft.NETFramework.ReferenceAssemblies
                          PrivateAssets=All
                          Version=1.0.0
+         Task Parameter:ItemName=PackageReference
          Task Parameter:LogCode=NU1504
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
        Target output items:
            Microsoft.PowerApps.MSBuild.Pcf
@@ -655,8 +655,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Using "GetRestoreProjectStyleTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreProjectStyleTask"
          Task Parameter:MSBuildProjectName=pcfaggrid
-         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:MSBuildProjectDirectory=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF
+         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:HasPackageReferenceItems=True
          (in) HasPackageReferenceItems 'True'
          (in) MSBuildProjectDirectory 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF'
@@ -681,11 +681,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "Message".
        Added Item(s): 
            _RestoreGraphEntry=
-               56dc05a9-1d67-46ad-813f-80c7f5f79755
+               689572b4-9d90-4750-b353-cc1fea205482
                        ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                        Type=RestoreSpec
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
    2:3>Done building target "_GenerateRestoreSpecs" in project "pcfaggrid.pcfproj".
@@ -698,19 +698,19 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:3>Target "_GetRestoreSettingsPerFramework" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GetRestoreSettingsCurrentProject" depends on it):
        Added Item(s): 
            _RestoreSettingsPerFramework=
-               f46c4dde-d5df-45b2-b2ca-d6a8182fdd14
+               a58a03ac-df17-4ddc-9370-ee1fb7aa6bd5
                        RestoreAdditionalProjectFallbackFolders=
                        RestoreAdditionalProjectFallbackFoldersExcludes=
                        RestoreAdditionalProjectSources=
        Target output items:
-           f46c4dde-d5df-45b2-b2ca-d6a8182fdd14
+           a58a03ac-df17-4ddc-9370-ee1fb7aa6bd5
                RestoreAdditionalProjectSources = 
                RestoreAdditionalProjectFallbackFoldersExcludes = 
                RestoreAdditionalProjectFallbackFolders = 
    2:3>Done building target "_GetRestoreSettingsPerFramework" in project "pcfaggrid.pcfproj".
    2:3>Target "_GetRestoreSettingsCurrentProject" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GetRestoreSettings" depends on it):
        Target output items:
-           f46c4dde-d5df-45b2-b2ca-d6a8182fdd14
+           a58a03ac-df17-4ddc-9370-ee1fb7aa6bd5
                RestoreAdditionalProjectSources = 
                RestoreAdditionalProjectFallbackFoldersExcludes = 
                RestoreAdditionalProjectFallbackFolders = 
@@ -721,13 +721,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Task "GetRestoreSettingsTask"
          Task Parameter:MSBuildStartupDirectory=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa
          Task Parameter:ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:
              RestoreSettingsPerFramework=
-                 f46c4dde-d5df-45b2-b2ca-d6a8182fdd14
+                 a58a03ac-df17-4ddc-9370-ee1fb7aa6bd5
                          RestoreAdditionalProjectFallbackFolders=
                          RestoreAdditionalProjectFallbackFoldersExcludes=
                          RestoreAdditionalProjectSources=
+         Task Parameter:RestoreProjectStyle=PackageReference
          (in) ProjectUniqueName 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj'
          (in) RestoreSources ''
          (in) RestorePackagesPath ''
@@ -760,11 +760,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: DotnetCliToolTargetFramework=netcoreapp1.0
        Using "GetRestoreDotnetCliToolsTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreDotnetCliToolsTask"
-         Task Parameter:RestoreSources=https://api.nuget.org/v3/index.json
          Task Parameter:RestorePackagesPath=C:\Users\Shaheer Ahmad\.nuget\packages\
-         Task Parameter:ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-         Task Parameter:ToolFramework=netcoreapp1.0
          Task Parameter:RestoreConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
+         Task Parameter:ToolFramework=netcoreapp1.0
+         Task Parameter:ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
+         Task Parameter:RestoreSources=https://api.nuget.org/v3/index.json
          (in) ProjectPath 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj'
          (in) DotnetCliToolReferences ''
          (in) RestoreSources 'https://api.nuget.org/v3/index.json'
@@ -772,13 +772,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          (in) RestoreConfigFilePaths 'C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config'
        Done executing task "GetRestoreDotnetCliToolsTask".
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
    2:3>Done building target "_GenerateDotnetCliToolReferenceSpecs" in project "pcfaggrid.pcfproj".
    2:3>Target "_GenerateRestoreGraphProjectEntry" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (entry point):
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
    2:3>Done building target "_GenerateRestoreGraphProjectEntry" in project "pcfaggrid.pcfproj".
@@ -792,7 +792,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: CollectPackageReferencesContinueOnError=false
        Using "CheckForDuplicateNuGetItemsTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "CheckForDuplicateNuGetItemsTask"
-         Task Parameter:ItemName=PackageReference
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
          Task Parameter:
              Items=
                  Microsoft.PowerApps.MSBuild.Solution
@@ -800,8 +800,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  Microsoft.NETFramework.ReferenceAssemblies
                          PrivateAssets=All
                          Version=1.0.0
+         Task Parameter:ItemName=PackageReference
          Task Parameter:LogCode=NU1504
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
        Target output items:
            Microsoft.PowerApps.MSBuild.Solution
@@ -815,8 +815,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Using "GetRestoreProjectStyleTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreProjectStyleTask"
          Task Parameter:MSBuildProjectName=PowerAppsToolsTemp_sa
-         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:MSBuildProjectDirectory=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa
+         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:HasPackageReferenceItems=True
          (in) HasPackageReferenceItems 'True'
          (in) MSBuildProjectDirectory 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa'
@@ -841,11 +841,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "Message".
        Added Item(s): 
            _RestoreGraphEntry=
-               f66f9101-1b89-4306-81b6-9c2ced0dee55
+               7c145c57-0b45-4321-ae33-1fe32d40517f
                        ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                        Type=RestoreSpec
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
    1:5>Done building target "_GenerateRestoreSpecs" in project "PowerAppsToolsTemp_sa.cdsproj".
@@ -858,19 +858,19 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:5>Target "_GetRestoreSettingsPerFramework" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GetRestoreSettingsCurrentProject" depends on it):
        Added Item(s): 
            _RestoreSettingsPerFramework=
-               5258ee5a-f145-41e4-82b1-fbd1a55ad115
+               74006e19-91c8-4493-ba2c-3a4e1cb5a15e
                        RestoreAdditionalProjectFallbackFolders=
                        RestoreAdditionalProjectFallbackFoldersExcludes=
                        RestoreAdditionalProjectSources=
        Target output items:
-           5258ee5a-f145-41e4-82b1-fbd1a55ad115
+           74006e19-91c8-4493-ba2c-3a4e1cb5a15e
                RestoreAdditionalProjectSources = 
                RestoreAdditionalProjectFallbackFoldersExcludes = 
                RestoreAdditionalProjectFallbackFolders = 
    1:5>Done building target "_GetRestoreSettingsPerFramework" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:5>Target "_GetRestoreSettingsCurrentProject" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GetRestoreSettings" depends on it):
        Target output items:
-           5258ee5a-f145-41e4-82b1-fbd1a55ad115
+           74006e19-91c8-4493-ba2c-3a4e1cb5a15e
                RestoreAdditionalProjectSources = 
                RestoreAdditionalProjectFallbackFoldersExcludes = 
                RestoreAdditionalProjectFallbackFolders = 
@@ -881,13 +881,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Task "GetRestoreSettingsTask"
          Task Parameter:MSBuildStartupDirectory=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa
          Task Parameter:ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:
              RestoreSettingsPerFramework=
-                 5258ee5a-f145-41e4-82b1-fbd1a55ad115
+                 74006e19-91c8-4493-ba2c-3a4e1cb5a15e
                          RestoreAdditionalProjectFallbackFolders=
                          RestoreAdditionalProjectFallbackFoldersExcludes=
                          RestoreAdditionalProjectSources=
+         Task Parameter:RestoreProjectStyle=PackageReference
          (in) ProjectUniqueName 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj'
          (in) RestoreSources ''
          (in) RestorePackagesPath ''
@@ -920,11 +920,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: DotnetCliToolTargetFramework=netcoreapp1.0
        Using "GetRestoreDotnetCliToolsTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreDotnetCliToolsTask"
-         Task Parameter:RestoreSources=https://api.nuget.org/v3/index.json
          Task Parameter:RestorePackagesPath=C:\Users\Shaheer Ahmad\.nuget\packages\
-         Task Parameter:ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-         Task Parameter:ToolFramework=netcoreapp1.0
          Task Parameter:RestoreConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
+         Task Parameter:ToolFramework=netcoreapp1.0
+         Task Parameter:ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:RestoreSources=https://api.nuget.org/v3/index.json
          (in) ProjectPath 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj'
          (in) DotnetCliToolReferences ''
          (in) RestoreSources 'https://api.nuget.org/v3/index.json'
@@ -932,13 +932,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          (in) RestoreConfigFilePaths 'C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config'
        Done executing task "GetRestoreDotnetCliToolsTask".
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
    1:5>Done building target "_GenerateDotnetCliToolReferenceSpecs" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:5>Target "_GenerateRestoreGraphProjectEntry" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (entry point):
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
    1:5>Done building target "_GenerateRestoreGraphProjectEntry" in project "PowerAppsToolsTemp_sa.cdsproj".
@@ -946,13 +946,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
      1>_GenerateRestoreGraph:
          Output Item(s): 
              _RestoreGraphEntry=
-                 56dc05a9-1d67-46ad-813f-80c7f5f79755
+                 689572b4-9d90-4750-b353-cc1fea205482
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          Type=RestoreSpec
-                 f66f9101-1b89-4306-81b6-9c2ced0dee55
+                 7c145c57-0b45-4321-ae33-1fe32d40517f
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -960,9 +960,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Type=RestoreSpec
        Done executing task "MSBuild".
        Task "MSBuild"
-         Task Parameter:Targets=_GenerateProjectRestoreGraph
-         Task Parameter:BuildInParallel=True
-         Task Parameter:Properties=ExcludeRestorePackageImports=true
          Task Parameter:
              Projects=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
@@ -973,6 +970,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:Targets=_GenerateProjectRestoreGraph
+         Task Parameter:Properties=ExcludeRestorePackageImports=true
+         Task Parameter:BuildInParallel=True
          Global Properties:
            ExcludeRestorePackageImports=true
      1>Project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (1) is building "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (2:4) on node 1 (_GenerateProjectRestoreGraph target(s)).
@@ -988,11 +988,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: _TargetFrameworkToBeUsed=
        Using "GetProjectTargetFrameworksTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetProjectTargetFrameworksTask"
+         Task Parameter:TargetFramework=net462
+         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
+         Task Parameter:TargetPlatformVersion=7.0
          Task Parameter:TargetPlatformIdentifier=Windows
          Task Parameter:ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-         Task Parameter:TargetPlatformVersion=7.0
-         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
-         Task Parameter:TargetFramework=net462
          (in) ProjectPath 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj'
          (in) TargetFrameworkMoniker '.NETFramework,Version=v4.6.2'
          (in) TargetPlatformIdentifier 'Windows'
@@ -1019,7 +1019,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: _RestoreProjectVersion=1.0.0
        Added Item(s): 
            _RestoreGraphEntry=
-               01ae1747-b770-4520-a829-46ddd36deeac
+               c7bb9409-78bc-4677-9d46-4c311cb395fa
                        CentralPackageTransitivePinningEnabled=
                        CentralPackageVersionOverrideEnabled=
                        ConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -1047,10 +1047,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        WarningsAsErrors=
                        _CentralPackageVersionsEnabled=
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
-           01ae1747-b770-4520-a829-46ddd36deeac
+           c7bb9409-78bc-4677-9d46-4c311cb395fa
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1084,9 +1084,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:4>Target "CollectPackageDownloads" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
        Set Property: CollectPackageDownloadsContinueOnError=false
        Task "CheckForDuplicateNuGetItemsTask"
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
          Task Parameter:ItemName=PackageDownload
          Task Parameter:LogCode=NU1505
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
    2:4>Done building target "CollectPackageDownloads" in project "pcfaggrid.pcfproj".
    2:4>Target "CollectFrameworkReferences" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
@@ -1094,9 +1094,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:4>Target "CollectCentralPackageVersions" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
        Set Property: CollectCentralPackageVersionsContinueOnError=false
        Task "CheckForDuplicateNuGetItemsTask"
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
          Task Parameter:ItemName=PackageVersion
          Task Parameter:LogCode=NU1506
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
    2:4>Done building target "CollectCentralPackageVersions" in project "pcfaggrid.pcfproj".
    2:4>Target "_GenerateProjectRestoreGraphPerFramework" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GenerateProjectRestoreGraphCurrentProject" depends on it):
@@ -1126,13 +1126,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          (in) PackageReferences 'Microsoft.PowerApps.MSBuild.Pcf;Microsoft.NETFramework.ReferenceAssemblies'
          Output Item(s): 
              _RestoreGraphEntry=
-                 9257b91a-4dde-4010-9738-6322cbbb10fb
+                 2122aefa-10ca-47af-ab8e-abf621e1a02b
                          Id=Microsoft.PowerApps.MSBuild.Pcf
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.*
-                 7e8b106e-e905-4668-8932-f523cd353856
+                 0658b075-b018-45be-994f-b785045e5088
                          Id=Microsoft.NETFramework.ReferenceAssemblies
                          PrivateAssets=All
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
@@ -1159,7 +1159,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "GetRestoreFrameworkReferencesTask".
        Added Item(s): 
            _RestoreGraphEntry=
-               19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+               72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                        AssetTargetFallback=
                        CLRSupport=
                        PackageTargetFallback=
@@ -1176,10 +1176,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        TargetPlatformVersion=7.0
                        Type=TargetFrameworkInformation
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
-           01ae1747-b770-4520-a829-46ddd36deeac
+           c7bb9409-78bc-4677-9d46-4c311cb395fa
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1206,20 +1206,20 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = pcfaggrid
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           9257b91a-4dde-4010-9738-6322cbbb10fb
+           2122aefa-10ca-47af-ab8e-abf621e1a02b
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.PowerApps.MSBuild.Pcf
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7e8b106e-e905-4668-8932-f523cd353856
+           0658b075-b018-45be-994f-b785045e5088
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+           72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1238,10 +1238,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:4>Done building target "_GenerateProjectRestoreGraphPerFramework" in project "pcfaggrid.pcfproj".
    2:4>Target "_GenerateProjectRestoreGraphCurrentProject" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GenerateRestoreDependencies" depends on it):
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
-           01ae1747-b770-4520-a829-46ddd36deeac
+           c7bb9409-78bc-4677-9d46-4c311cb395fa
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1268,20 +1268,20 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = pcfaggrid
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           9257b91a-4dde-4010-9738-6322cbbb10fb
+           2122aefa-10ca-47af-ab8e-abf621e1a02b
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.PowerApps.MSBuild.Pcf
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7e8b106e-e905-4668-8932-f523cd353856
+           0658b075-b018-45be-994f-b785045e5088
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+           72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1300,10 +1300,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:4>Done building target "_GenerateProjectRestoreGraphCurrentProject" in project "pcfaggrid.pcfproj".
    2:4>Target "_GenerateRestoreDependencies" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_GenerateProjectRestoreGraph" depends on it):
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
-           01ae1747-b770-4520-a829-46ddd36deeac
+           c7bb9409-78bc-4677-9d46-4c311cb395fa
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1330,20 +1330,20 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = pcfaggrid
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           9257b91a-4dde-4010-9738-6322cbbb10fb
+           2122aefa-10ca-47af-ab8e-abf621e1a02b
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.PowerApps.MSBuild.Pcf
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7e8b106e-e905-4668-8932-f523cd353856
+           0658b075-b018-45be-994f-b785045e5088
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+           72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1362,10 +1362,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:4>Done building target "_GenerateRestoreDependencies" in project "pcfaggrid.pcfproj".
    2:4>Target "_GenerateProjectRestoreGraph" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (entry point):
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
-           01ae1747-b770-4520-a829-46ddd36deeac
+           c7bb9409-78bc-4677-9d46-4c311cb395fa
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1392,20 +1392,20 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = pcfaggrid
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           9257b91a-4dde-4010-9738-6322cbbb10fb
+           2122aefa-10ca-47af-ab8e-abf621e1a02b
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.PowerApps.MSBuild.Pcf
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7e8b106e-e905-4668-8932-f523cd353856
+           0658b075-b018-45be-994f-b785045e5088
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+           72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1436,11 +1436,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: _TargetFrameworkToBeUsed=
        Using "GetProjectTargetFrameworksTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetProjectTargetFrameworksTask"
+         Task Parameter:TargetFramework=net462
+         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
+         Task Parameter:TargetPlatformVersion=7.0
          Task Parameter:TargetPlatformIdentifier=Windows
          Task Parameter:ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-         Task Parameter:TargetPlatformVersion=7.0
-         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
-         Task Parameter:TargetFramework=net462
          (in) ProjectPath 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj'
          (in) TargetFrameworkMoniker '.NETFramework,Version=v4.6.2'
          (in) TargetPlatformIdentifier 'Windows'
@@ -1467,7 +1467,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: _RestoreProjectVersion=1.0.0
        Added Item(s): 
            _RestoreGraphEntry=
-               14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+               aa670561-5c3c-468c-812b-ad9c4f5027ec
                        CentralPackageTransitivePinningEnabled=
                        CentralPackageVersionOverrideEnabled=
                        ConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -1495,10 +1495,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        WarningsAsErrors=
                        _CentralPackageVersionsEnabled=
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
-           14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+           aa670561-5c3c-468c-812b-ad9c4f5027ec
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1532,9 +1532,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:6>Target "CollectPackageDownloads" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
        Set Property: CollectPackageDownloadsContinueOnError=false
        Task "CheckForDuplicateNuGetItemsTask"
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
          Task Parameter:ItemName=PackageDownload
          Task Parameter:LogCode=NU1505
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
    1:6>Done building target "CollectPackageDownloads" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:6>Target "CollectFrameworkReferences" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
@@ -1542,22 +1542,22 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:6>Target "CollectCentralPackageVersions" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
        Set Property: CollectCentralPackageVersionsContinueOnError=false
        Task "CheckForDuplicateNuGetItemsTask"
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
          Task Parameter:ItemName=PackageVersion
          Task Parameter:LogCode=NU1506
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
    1:6>Done building target "CollectCentralPackageVersions" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:6>Target "_GenerateProjectRestoreGraphPerFramework" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GenerateProjectRestoreGraphCurrentProject" depends on it):
        Using "GetRestoreProjectReferencesTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreProjectReferencesTask"
-         Task Parameter:ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-         Task Parameter:ParentProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
          Task Parameter:
              ProjectReferences=
                  ..\..\pcfaggrid.pcfproj
                          OutputItemType=
                          ReferenceSourceTarget=ProjectReference
                          Targets=
+         Task Parameter:ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:ParentProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
          Task Parameter:TargetFrameworks=net462
          (in) ProjectUniqueName 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj'
          (in) TargetFrameworks 'net462'
@@ -1565,7 +1565,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          (in) ParentProjectPath 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj'
          Output Item(s): 
              _RestoreGraphEntry=
-                 51b40dc0-f65b-42b5-b468-1df575b4a251
+                 862fa02e-9257-426d-9adb-dd889edc29b8
                          ProjectPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          ProjectReferenceUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -1588,13 +1588,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          (in) PackageReferences 'Microsoft.PowerApps.MSBuild.Solution;Microsoft.NETFramework.ReferenceAssemblies'
          Output Item(s): 
              _RestoreGraphEntry=
-                 91f4dc77-d761-4b64-8bcc-6cb205dea835
+                 c8367a58-9912-494c-997e-34c767fb9e3c
                          Id=Microsoft.PowerApps.MSBuild.Solution
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.*
-                 7da8ead7-f300-47aa-a8fd-af0b8b93157e
+                 2a407d54-a76b-4e7b-98c6-07880ef77ce2
                          Id=Microsoft.NETFramework.ReferenceAssemblies
                          PrivateAssets=All
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -1621,7 +1621,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "GetRestoreFrameworkReferencesTask".
        Added Item(s): 
            _RestoreGraphEntry=
-               bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+               c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                        AssetTargetFallback=
                        CLRSupport=
                        PackageTargetFallback=
@@ -1638,10 +1638,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        TargetPlatformVersion=7.0
                        Type=TargetFrameworkInformation
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
-           14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+           aa670561-5c3c-468c-812b-ad9c4f5027ec
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1668,26 +1668,26 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = PowerAppsToolsTemp_sa
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           51b40dc0-f65b-42b5-b468-1df575b4a251
+           862fa02e-9257-426d-9adb-dd889edc29b8
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = ProjectReference
                TargetFrameworks = net462
                ProjectPath = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                ProjectReferenceUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-           91f4dc77-d761-4b64-8bcc-6cb205dea835
+           c8367a58-9912-494c-997e-34c767fb9e3c
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.PowerApps.MSBuild.Solution
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7da8ead7-f300-47aa-a8fd-af0b8b93157e
+           2a407d54-a76b-4e7b-98c6-07880ef77ce2
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+           c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1706,10 +1706,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:6>Done building target "_GenerateProjectRestoreGraphPerFramework" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:6>Target "_GenerateProjectRestoreGraphCurrentProject" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GenerateRestoreDependencies" depends on it):
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
-           14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+           aa670561-5c3c-468c-812b-ad9c4f5027ec
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1736,26 +1736,26 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = PowerAppsToolsTemp_sa
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           51b40dc0-f65b-42b5-b468-1df575b4a251
+           862fa02e-9257-426d-9adb-dd889edc29b8
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = ProjectReference
                TargetFrameworks = net462
                ProjectPath = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                ProjectReferenceUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-           91f4dc77-d761-4b64-8bcc-6cb205dea835
+           c8367a58-9912-494c-997e-34c767fb9e3c
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.PowerApps.MSBuild.Solution
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7da8ead7-f300-47aa-a8fd-af0b8b93157e
+           2a407d54-a76b-4e7b-98c6-07880ef77ce2
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+           c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1774,10 +1774,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:6>Done building target "_GenerateProjectRestoreGraphCurrentProject" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:6>Target "_GenerateRestoreDependencies" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GenerateProjectRestoreGraph" depends on it):
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
-           14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+           aa670561-5c3c-468c-812b-ad9c4f5027ec
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1804,26 +1804,26 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = PowerAppsToolsTemp_sa
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           51b40dc0-f65b-42b5-b468-1df575b4a251
+           862fa02e-9257-426d-9adb-dd889edc29b8
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = ProjectReference
                TargetFrameworks = net462
                ProjectPath = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                ProjectReferenceUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-           91f4dc77-d761-4b64-8bcc-6cb205dea835
+           c8367a58-9912-494c-997e-34c767fb9e3c
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.PowerApps.MSBuild.Solution
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7da8ead7-f300-47aa-a8fd-af0b8b93157e
+           2a407d54-a76b-4e7b-98c6-07880ef77ce2
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+           c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1842,10 +1842,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:6>Done building target "_GenerateRestoreDependencies" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:6>Target "_GenerateProjectRestoreGraph" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (entry point):
        Target output items:
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
-           14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+           aa670561-5c3c-468c-812b-ad9c4f5027ec
                SkipContentFileWrite = 
                FallbackFolders = 
                NuGetLockFilePath = 
@@ -1872,26 +1872,26 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectName = PowerAppsToolsTemp_sa
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           51b40dc0-f65b-42b5-b468-1df575b4a251
+           862fa02e-9257-426d-9adb-dd889edc29b8
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = ProjectReference
                TargetFrameworks = net462
                ProjectPath = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                ProjectReferenceUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-           91f4dc77-d761-4b64-8bcc-6cb205dea835
+           c8367a58-9912-494c-997e-34c767fb9e3c
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.PowerApps.MSBuild.Solution
                Type = Dependency
                TargetFrameworks = net462
                VersionRange = 1.*
-           7da8ead7-f300-47aa-a8fd-af0b8b93157e
+           2a407d54-a76b-4e7b-98c6-07880ef77ce2
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
                Type = Dependency
                TargetFrameworks = net462
                PrivateAssets = All
                VersionRange = 1.0.0
-           bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+           c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                TargetFrameworkProfile = 
                TargetFramework = net462
                TargetFrameworkIdentifier = .NETFramework
@@ -1912,13 +1912,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
      1>_GenerateRestoreGraph:
          Output Item(s): 
              _RestoreGraphEntry=
-                 56dc05a9-1d67-46ad-813f-80c7f5f79755
+                 689572b4-9d90-4750-b353-cc1fea205482
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          Type=RestoreSpec
-                 01ae1747-b770-4520-a829-46ddd36deeac
+                 c7bb9409-78bc-4677-9d46-4c311cb395fa
                          CentralPackageTransitivePinningEnabled=
                          CentralPackageVersionOverrideEnabled=
                          ConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -1948,7 +1948,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Version=1.0.0
                          WarningsAsErrors=
                          _CentralPackageVersionsEnabled=
-                 9257b91a-4dde-4010-9738-6322cbbb10fb
+                 2122aefa-10ca-47af-ab8e-abf621e1a02b
                          Id=Microsoft.PowerApps.MSBuild.Pcf
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -1957,7 +1957,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.*
-                 7e8b106e-e905-4668-8932-f523cd353856
+                 0658b075-b018-45be-994f-b785045e5088
                          Id=Microsoft.NETFramework.ReferenceAssemblies
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -1967,7 +1967,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.0.0
-                 19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+                 72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                          AssetTargetFallback=
                          CLRSupport=
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -1986,13 +1986,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetPlatformMoniker=Windows,Version=7.0
                          TargetPlatformVersion=7.0
                          Type=TargetFrameworkInformation
-                 f66f9101-1b89-4306-81b6-9c2ced0dee55
+                 7c145c57-0b45-4321-ae33-1fe32d40517f
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          Type=RestoreSpec
-                 14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+                 aa670561-5c3c-468c-812b-ad9c4f5027ec
                          CentralPackageTransitivePinningEnabled=
                          CentralPackageVersionOverrideEnabled=
                          ConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -2022,7 +2022,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Version=1.0.0
                          WarningsAsErrors=
                          _CentralPackageVersionsEnabled=
-                 51b40dc0-f65b-42b5-b468-1df575b4a251
+                 862fa02e-9257-426d-9adb-dd889edc29b8
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -2031,7 +2031,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          TargetFrameworks=net462
                          Type=ProjectReference
-                 91f4dc77-d761-4b64-8bcc-6cb205dea835
+                 c8367a58-9912-494c-997e-34c767fb9e3c
                          Id=Microsoft.PowerApps.MSBuild.Solution
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -2040,7 +2040,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.*
-                 7da8ead7-f300-47aa-a8fd-af0b8b93157e
+                 2a407d54-a76b-4e7b-98c6-07880ef77ce2
                          Id=Microsoft.NETFramework.ReferenceAssemblies
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -2050,7 +2050,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.0.0
-                 bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+                 c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                          AssetTargetFallback=
                          CLRSupport=
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -2071,19 +2071,19 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Type=TargetFrameworkInformation
        Done executing task "MSBuild".
        Target output items:
-           56dc05a9-1d67-46ad-813f-80c7f5f79755
+           689572b4-9d90-4750-b353-cc1fea205482
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Type = RestoreSpec
                MSBuildSourceTargetName = _IsProjectRestoreSupported
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-           f66f9101-1b89-4306-81b6-9c2ced0dee55
+           7c145c57-0b45-4321-ae33-1fe32d40517f
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = RestoreSpec
                MSBuildSourceTargetName = _IsProjectRestoreSupported
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-           01ae1747-b770-4520-a829-46ddd36deeac
+           c7bb9409-78bc-4677-9d46-4c311cb395fa
                SkipContentFileWrite = 
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                FallbackFolders = 
@@ -2113,7 +2113,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           9257b91a-4dde-4010-9738-6322cbbb10fb
+           2122aefa-10ca-47af-ab8e-abf621e1a02b
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.PowerApps.MSBuild.Pcf
@@ -2122,7 +2122,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                MSBuildSourceTargetName = _IsProjectRestoreSupported
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                VersionRange = 1.*
-           7e8b106e-e905-4668-8932-f523cd353856
+           0658b075-b018-45be-994f-b785045e5088
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
@@ -2132,7 +2132,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                MSBuildSourceTargetName = _IsProjectRestoreSupported
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                VersionRange = 1.0.0
-           19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+           72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                TargetFrameworkProfile = 
                TargetFramework = net462
@@ -2151,7 +2151,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                TargetFrameworkVersion = v4.6.2
                TargetPlatformMinVersion = 
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
-           14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+           aa670561-5c3c-468c-812b-ad9c4f5027ec
                SkipContentFileWrite = 
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                FallbackFolders = 
@@ -2181,7 +2181,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                PackagesPath = C:\Users\Shaheer Ahmad\.nuget\packages\
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ConfigFilePaths = C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
-           51b40dc0-f65b-42b5-b468-1df575b4a251
+           862fa02e-9257-426d-9adb-dd889edc29b8
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Type = ProjectReference
@@ -2190,7 +2190,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                ProjectPath = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                ProjectReferenceUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-           91f4dc77-d761-4b64-8bcc-6cb205dea835
+           c8367a58-9912-494c-997e-34c767fb9e3c
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.PowerApps.MSBuild.Solution
@@ -2199,7 +2199,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                MSBuildSourceTargetName = _IsProjectRestoreSupported
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                VersionRange = 1.*
-           7da8ead7-f300-47aa-a8fd-af0b8b93157e
+           2a407d54-a76b-4e7b-98c6-07880ef77ce2
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                ProjectUniqueName = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                Id = Microsoft.NETFramework.ReferenceAssemblies
@@ -2209,7 +2209,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                MSBuildSourceTargetName = _IsProjectRestoreSupported
                OriginalItemSpec = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                VersionRange = 1.0.0
-           bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+           c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                MSBuildSourceProjectFile = C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                TargetFrameworkProfile = 
                TargetFramework = net462
@@ -2233,35 +2233,36 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Task "RemoveDuplicates"
          Output Item(s): 
              _RestoreGraphEntryFiltered=
-                 56dc05a9-1d67-46ad-813f-80c7f5f79755
-                 f66f9101-1b89-4306-81b6-9c2ced0dee55
-                 01ae1747-b770-4520-a829-46ddd36deeac
-                 9257b91a-4dde-4010-9738-6322cbbb10fb
-                 7e8b106e-e905-4668-8932-f523cd353856
-                 19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
-                 14e8dc74-8eb7-47cf-8c6b-7b1c81447456
-                 51b40dc0-f65b-42b5-b468-1df575b4a251
-                 91f4dc77-d761-4b64-8bcc-6cb205dea835
-                 7da8ead7-f300-47aa-a8fd-af0b8b93157e
-                 bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+                 689572b4-9d90-4750-b353-cc1fea205482
+                 7c145c57-0b45-4321-ae33-1fe32d40517f
+                 c7bb9409-78bc-4677-9d46-4c311cb395fa
+                 2122aefa-10ca-47af-ab8e-abf621e1a02b
+                 0658b075-b018-45be-994f-b785045e5088
+                 72bd0a41-2cde-4e8e-b91f-ba93b1e39906
+                 aa670561-5c3c-468c-812b-ad9c4f5027ec
+                 862fa02e-9257-426d-9adb-dd889edc29b8
+                 c8367a58-9912-494c-997e-34c767fb9e3c
+                 2a407d54-a76b-4e7b-98c6-07880ef77ce2
+                 c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
        Done executing task "RemoveDuplicates".
        Using "RestoreTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "RestoreTask"
+         Task Parameter:RestoreRecursive=True
          Task Parameter:
              RestoreGraphItems=
-                 56dc05a9-1d67-46ad-813f-80c7f5f79755
+                 689572b4-9d90-4750-b353-cc1fea205482
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
                          Type=RestoreSpec
-                 f66f9101-1b89-4306-81b6-9c2ced0dee55
+                 7c145c57-0b45-4321-ae33-1fe32d40517f
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          Type=RestoreSpec
-                 01ae1747-b770-4520-a829-46ddd36deeac
+                 c7bb9409-78bc-4677-9d46-4c311cb395fa
                          CentralPackageTransitivePinningEnabled=
                          CentralPackageVersionOverrideEnabled=
                          ConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -2291,7 +2292,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Version=1.0.0
                          WarningsAsErrors=
                          _CentralPackageVersionsEnabled=
-                 9257b91a-4dde-4010-9738-6322cbbb10fb
+                 2122aefa-10ca-47af-ab8e-abf621e1a02b
                          Id=Microsoft.PowerApps.MSBuild.Pcf
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -2300,7 +2301,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.*
-                 7e8b106e-e905-4668-8932-f523cd353856
+                 0658b075-b018-45be-994f-b785045e5088
                          Id=Microsoft.NETFramework.ReferenceAssemblies
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -2310,7 +2311,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.0.0
-                 19a7b44e-6d44-4f0a-89f5-268fefd4ce3c
+                 72bd0a41-2cde-4e8e-b91f-ba93b1e39906
                          AssetTargetFallback=
                          CLRSupport=
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -2329,7 +2330,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetPlatformMoniker=Windows,Version=7.0
                          TargetPlatformVersion=7.0
                          Type=TargetFrameworkInformation
-                 14e8dc74-8eb7-47cf-8c6b-7b1c81447456
+                 aa670561-5c3c-468c-812b-ad9c4f5027ec
                          CentralPackageTransitivePinningEnabled=
                          CentralPackageVersionOverrideEnabled=
                          ConfigFilePaths=C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -2359,7 +2360,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Version=1.0.0
                          WarningsAsErrors=
                          _CentralPackageVersionsEnabled=
-                 51b40dc0-f65b-42b5-b468-1df575b4a251
+                 862fa02e-9257-426d-9adb-dd889edc29b8
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -2368,7 +2369,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          ProjectUniqueName=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          TargetFrameworks=net462
                          Type=ProjectReference
-                 91f4dc77-d761-4b64-8bcc-6cb205dea835
+                 c8367a58-9912-494c-997e-34c767fb9e3c
                          Id=Microsoft.PowerApps.MSBuild.Solution
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -2377,7 +2378,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.*
-                 7da8ead7-f300-47aa-a8fd-af0b8b93157e
+                 2a407d54-a76b-4e7b-98c6-07880ef77ce2
                          Id=Microsoft.NETFramework.ReferenceAssemblies
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
                          MSBuildSourceTargetName=_IsProjectRestoreSupported
@@ -2387,7 +2388,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetFrameworks=net462
                          Type=Dependency
                          VersionRange=1.0.0
-                 bdbdf9a9-f9bc-4fd8-b72b-8285f9273f36
+                 c808ad2f-9fa4-45c8-97e9-cc53db7b0a58
                          AssetTargetFallback=
                          CLRSupport=
                          MSBuildSourceProjectFile=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
@@ -2406,7 +2407,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetPlatformMoniker=Windows,Version=7.0
                          TargetPlatformVersion=7.0
                          Type=TargetFrameworkInformation
-         Task Parameter:RestoreRecursive=True
          Task Parameter:HideWarningsAndErrors=False
          (in) RestoreGraphItems Count '11'
          (in) RestoreDisableParallel 'False'
@@ -2420,17 +2420,19 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          X.509 certificate chain validation will use the default trust store selected by .NET.
          X.509 certificate chain validation will use the default trust store selected by .NET.
          Running restore with 4 concurrent jobs.
-         Reading project file C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj.
          Reading project file C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj.
+         Reading project file C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj.
          Restoring packages for C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj...
          Restoring packages for .NETFramework,Version=v4.6.2...
          The restore inputs for 'pcfaggrid' have not changed. No further actions are required to complete the restore.
          Committing restore...
          Assets file has not changed. Skipping assets file writing. Path: C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\project.assets.json
          No-Op restore. The cache will not be updated. Path: C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\project.nuget.cache
-         Restored C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj (in 45 ms).
-           CACHE https://api.nuget.org/v3-flatcontainer/microsoft.powerapps.msbuild.solution/index.json
-           CACHE https://api.nuget.org/v3-flatcontainer/microsoft.powerapps.msbuild.pcf/index.json
+         Restored C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj (in 35 ms).
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.powerapps.msbuild.solution/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.powerapps.msbuild.pcf/index.json
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.powerapps.msbuild.solution/index.json 1014ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.powerapps.msbuild.pcf/index.json 1078ms
          Resolving conflicts for .NETFramework,Version=v4.6.2...
          Checking compatibility of packages on .NETFramework,Version=v4.6.2.
          Checking compatibility for PowerAppsToolsTemp_sa 1.0.0 with .NETFramework,Version=v4.6.2.
@@ -2446,7 +2448,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          Writing assets file to disk. Path: C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\obj\project.assets.json
          Writing cache file to disk. Path: C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\obj\project.nuget.cache
          Persisting dg to C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\obj\PowerAppsToolsTemp_sa.cdsproj.nuget.dgspec.json
-         Restored C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (in 291 ms).
+         Restored C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj (in 2.15 sec).
          
          NuGet Config files used:
              C:\Users\Shaheer Ahmad\AppData\Roaming\NuGet\NuGet.Config
@@ -2580,16 +2582,16 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:7>Target "_PpbtTelemetryInitializeSession" in file "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.tasks" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (entry point):
        Using "PpbtTelemetryInitializeSession" task from assembly "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
        Task "PpbtTelemetryInitializeSession"
-         Task Parameter:PpbtTelemetryRecorderDirectory=C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
          Task Parameter:PpbtTelemetryRecorderUseDotnet=True
          Task Parameter:PpbtTelemetryRecorderWaitToExit=False
-         PpbtTelemetryInitializeSession: Initialized the telemetry sessionId to 3eb3708e-8ec9-4328-afdd-a02b8e8e2024.
+         Task Parameter:PpbtTelemetryRecorderDirectory=C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
+         PpbtTelemetryInitializeSession: Initialized the telemetry sessionId to cbb079be-ceb0-4b99-a9f6-e18699ddbec2.
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
            ppbtTelemetryRecorder.dll PreLoad
-         PpbtTelemetryInitializeSession: Initialized the telemetry service for Power Platform Build Tools (sessionId: `3eb3708e-8ec9-4328-afdd-a02b8e8e2024`, key: `ppbt.TelemetrySessionService--C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0`).
-         Output Property: PpbtTelemetrySessionId=3eb3708e-8ec9-4328-afdd-a02b8e8e2024
+         PpbtTelemetryInitializeSession: Initialized the telemetry service for Power Platform Build Tools (sessionId: `cbb079be-ceb0-4b99-a9f6-e18699ddbec2`, key: `ppbt.TelemetrySessionService--C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0`).
+         Output Property: PpbtTelemetrySessionId=cbb079be-ceb0-4b99-a9f6-e18699ddbec2
        Done executing task "PpbtTelemetryInitializeSession".
    1:7>Done building target "_PpbtTelemetryInitializeSession" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:7>Target "_GetProjectJsonPath" in file "C:\Program Files\dotnet\sdk\6.0.413\NuGet.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "_GetRestoreProjectStyle" depends on it):
@@ -2599,7 +2601,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: CollectPackageReferencesContinueOnError=false
        Using "CheckForDuplicateNuGetItemsTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "CheckForDuplicateNuGetItemsTask"
-         Task Parameter:ItemName=PackageReference
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
          Task Parameter:
              Items=
                  Microsoft.PowerApps.MSBuild.Solution
@@ -2607,8 +2609,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  Microsoft.NETFramework.ReferenceAssemblies
                          PrivateAssets=All
                          Version=1.0.0
+         Task Parameter:ItemName=PackageReference
          Task Parameter:LogCode=NU1504
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
        Target output items:
            Microsoft.PowerApps.MSBuild.Solution
@@ -2622,8 +2624,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Using "GetRestoreProjectStyleTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreProjectStyleTask"
          Task Parameter:MSBuildProjectName=PowerAppsToolsTemp_sa
-         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:MSBuildProjectDirectory=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa
+         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:HasPackageReferenceItems=True
          (in) HasPackageReferenceItems 'True'
          (in) MSBuildProjectDirectory 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa'
@@ -2714,20 +2716,20 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: AddSyntheticProjectReferencesForSolutionDependencies=true
        Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignProjectConfiguration"
-         Task Parameter:OutputType=exe
-         Task Parameter:AddSyntheticProjectReferencesForSolutionDependencies=True
-         Task Parameter:OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True
-         Task Parameter:CurrentProject=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
-         Task Parameter:ShouldUnsetParentConfigurationAndPlatform=False
+         Task Parameter:CurrentProjectPlatform=AnyCPU
          Task Parameter:
              ProjectReferences=
                  ..\..\pcfaggrid.pcfproj
                          OutputItemType=
                          ReferenceSourceTarget=ProjectReference
                          Targets=
-         Task Parameter:CurrentProjectConfiguration=Debug
+         Task Parameter:OutputType=exe
          Task Parameter:ResolveConfigurationPlatformUsingMappings=False
-         Task Parameter:CurrentProjectPlatform=AnyCPU
+         Task Parameter:CurrentProjectConfiguration=Debug
+         Task Parameter:ShouldUnsetParentConfigurationAndPlatform=False
+         Task Parameter:OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True
+         Task Parameter:CurrentProject=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj
+         Task Parameter:AddSyntheticProjectReferencesForSolutionDependencies=True
          Project reference "..\..\pcfaggrid.pcfproj" has not been resolved.
          Output Item(s): 
              _ProjectReferenceWithConfiguration=
@@ -2767,10 +2769,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:7>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "PrepareProjectReferences" depends on it):
        Set Property: ReferringTargetFrameworkForProjectReferences=.NETFramework,Version=v4.6.2
        Task "MSBuild"
-         Task Parameter:RemoveProperties=;TargetFramework;RuntimeIdentifier
-         Task Parameter:Targets=GetTargetFrameworks
-         Task Parameter:SkipNonexistentTargets=True
-         Task Parameter:BuildInParallel=True
          Task Parameter:
              Projects=
                  ..\..\pcfaggrid.pcfproj
@@ -2779,6 +2777,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          ReferenceOutputAssembly=true
                          ReferenceSourceTarget=ProjectReference
                          Targets=
+         Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=GetTargetFrameworks
+         Task Parameter:RemoveProperties=;TargetFramework;RuntimeIdentifier
+         Task Parameter:BuildInParallel=True
          Removing Properties:
            TargetFramework
            RuntimeIdentifier
@@ -2903,16 +2905,16 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:5>Target "_PpbtTelemetryInitializeSession" in file "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.tasks" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (entry point):
        Using "PpbtTelemetryInitializeSession" task from assembly "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
        Task "PpbtTelemetryInitializeSession"
-         Task Parameter:PpbtTelemetryRecorderDirectory=C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
          Task Parameter:PpbtTelemetryRecorderUseDotnet=True
          Task Parameter:PpbtTelemetryRecorderWaitToExit=False
-         PpbtTelemetryInitializeSession: Reusing telemetry sessionId 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 from build.
+         Task Parameter:PpbtTelemetryRecorderDirectory=C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
+         PpbtTelemetryInitializeSession: Reusing telemetry sessionId cbb079be-ceb0-4b99-a9f6-e18699ddbec2 from build.
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
            ppbtTelemetryRecorder.dll PreLoad
-         PpbtTelemetryInitializeSession: Initialized the telemetry service for Power Platform Build Tools (sessionId: `3eb3708e-8ec9-4328-afdd-a02b8e8e2024`, key: `ppbt.TelemetrySessionService--C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0`).
-         Output Property: PpbtTelemetrySessionId=3eb3708e-8ec9-4328-afdd-a02b8e8e2024
+         PpbtTelemetryInitializeSession: Initialized the telemetry service for Power Platform Build Tools (sessionId: `cbb079be-ceb0-4b99-a9f6-e18699ddbec2`, key: `ppbt.TelemetrySessionService--C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0`).
+         Output Property: PpbtTelemetrySessionId=cbb079be-ceb0-4b99-a9f6-e18699ddbec2
        Done executing task "PpbtTelemetryInitializeSession".
    2:5>Done building target "_PpbtTelemetryInitializeSession" in project "pcfaggrid.pcfproj".
    2:5>Target "GetTargetFrameworksWithPlatformForSingleTargetFramework" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "GetTargetFrameworks" depends on it):
@@ -3045,7 +3047,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        Targets=
        Using "GetReferenceNearestTargetFrameworkTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetReferenceNearestTargetFrameworkTask"
-         Task Parameter:CurrentProjectTargetPlatform=Windows,Version=7.0
          Task Parameter:
              AnnotatedProjectReferences=
                  ..\..\pcfaggrid.pcfproj
@@ -3067,6 +3068,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          Targets=
          Task Parameter:CurrentProjectTargetFramework=.NETFramework,Version=v4.6.2
          Task Parameter:CurrentProjectName=PowerAppsToolsTemp_sa
+         Task Parameter:CurrentProjectTargetPlatform=Windows,Version=7.0
          (in) CurrentProjectTargetFramework '.NETFramework,Version=v4.6.2'
          (in) CurrentProjectTargetPlatform 'Windows,Version=7.0'
          (in) FallbackTargetFrameworks ''
@@ -3135,8 +3137,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:7>Done building target "PrepareProjectReferences" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:7>Target "CleanReferencedProjects" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Clean" depends on it):
        Task "MSBuild"
-         Task Parameter:Targets=Clean
-         Task Parameter:BuildInParallel=True
          Task Parameter:
              Projects=
                  ..\..\pcfaggrid.pcfproj
@@ -3158,6 +3158,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetPlatformMonikers=Windows,Version=7.0
                          Targets=
                          UndefineProperties=;TargetFramework;RuntimeIdentifier
+         Task Parameter:Targets=Clean
+         Task Parameter:BuildInParallel=True
          Removing Properties for project "..\..\pcfaggrid.pcfproj":
            TargetFramework
            RuntimeIdentifier
@@ -3171,7 +3173,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: CollectPackageReferencesContinueOnError=false
        Using "CheckForDuplicateNuGetItemsTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "CheckForDuplicateNuGetItemsTask"
-         Task Parameter:ItemName=PackageReference
+         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
          Task Parameter:
              Items=
                  Microsoft.PowerApps.MSBuild.Pcf
@@ -3179,8 +3181,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  Microsoft.NETFramework.ReferenceAssemblies
                          PrivateAssets=All
                          Version=1.0.0
+         Task Parameter:ItemName=PackageReference
          Task Parameter:LogCode=NU1504
-         Task Parameter:MSBuildProjectFullPath=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj
        Done executing task "CheckForDuplicateNuGetItemsTask".
        Target output items:
            Microsoft.PowerApps.MSBuild.Pcf
@@ -3194,8 +3196,8 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Using "GetRestoreProjectStyleTask" task from assembly "C:\Program Files\dotnet\sdk\6.0.413\NuGet.Build.Tasks.dll".
        Task "GetRestoreProjectStyleTask"
          Task Parameter:MSBuildProjectName=pcfaggrid
-         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:MSBuildProjectDirectory=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF
+         Task Parameter:RestoreProjectStyle=PackageReference
          Task Parameter:HasPackageReferenceItems=True
          (in) HasPackageReferenceItems 'True'
          (in) MSBuildProjectDirectory 'C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF'
@@ -3252,16 +3254,12 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          Task Parameter:File=obj\Debug\pcfaggrid.pcfproj.FileListAbsolute.txt
          Output Item(s): 
              _CleanPriorFileWrites=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "ReadLinesFromFile".
        Task "FindUnderPath"
          Task Parameter:
              Files=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:Path=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\
@@ -3270,8 +3268,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Task "FindUnderPath"
          Task Parameter:
              Files=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:Path=obj\Debug\
@@ -3282,11 +3278,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "FindUnderPath".
        Task "Delete"
+         Task Parameter:TreatErrorsAsWarnings=True
          Task Parameter:
              Files=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
-         Task Parameter:TreatErrorsAsWarnings=True
          Deleting file "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache".
          Deleting file "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache".
          Output Item(s): 
@@ -3296,25 +3292,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "Delete".
-       Added Item(s): 
-           _CleanRemainingFileWritesAfterClean=
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Task "RemoveDuplicates"
-         Output Item(s): 
-             _CleanUniqueRemainingFileWrites=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "RemoveDuplicates".
        Task "MakeDir"
          Task Parameter:Directories=obj\Debug\
        Done executing task "MakeDir".
        Task "WriteLinesToFile"
          Task Parameter:Overwrite=True
-         Task Parameter:
-             Lines=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:File=obj\Debug\pcfaggrid.pcfproj.FileListAbsolute.txt
        Done executing task "WriteLinesToFile".
    2:6>Done building target "CoreClean" in project "pcfaggrid.pcfproj".
@@ -3327,9 +3311,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:6>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "PrepareProjectReferences" depends on it):
        Set Property: ReferringTargetFrameworkForProjectReferences=.NETFramework,Version=v4.6.2
        Task "MSBuild"
-         Task Parameter:RemoveProperties=;TargetFramework;RuntimeIdentifier
-         Task Parameter:Targets=GetTargetFrameworks
          Task Parameter:SkipNonexistentTargets=True
+         Task Parameter:Targets=GetTargetFrameworks
+         Task Parameter:RemoveProperties=;TargetFramework;RuntimeIdentifier
          Task Parameter:BuildInParallel=True
        Done executing task "MSBuild".
        Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities)' != '' and '$(ReferringTargetFrameworkForProjectReferences)' != ''
@@ -3357,13 +3341,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:6>Target "PcfClean" in file "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\build\Microsoft.PowerApps.MSBuild.Pcf.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "Clean" depends on it):
        Using "PpbtTelemetryStartBuildPhase" task from assembly "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
        Task "PpbtTelemetryStartBuildPhase"
-         Task Parameter:BuildPhase=npm-clean
          Task Parameter:ProjectType=pcf
+         Task Parameter:BuildPhase=npm-clean
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
-           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T12:59:24.5238844+00:00 pcf 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 StartBuildPhase {\"buildPhase\":\"npm-clean\",\"Success\":\"true\"} null
-         Output Property: _PcfNpmCleanStartTimeTicks=638468819645215549
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T15:01:43.0771705+00:00 pcf cbb079be-ceb0-4b99-a9f6-e18699ddbec2 StartBuildPhase {\"buildPhase\":\"npm-clean\",\"Success\":\"true\"} null
+         Output Property: _PcfNpmCleanStartTimeTicks=638468893030739307
        Done executing task "PpbtTelemetryStartBuildPhase".
        Using "Exec" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Exec"
@@ -3374,19 +3358,19 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          > pcf-project@1.0.0 clean
          > pcf-scripts clean --noColor --buildMode development --outDir C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls --buildSource MSBuild
          
-         [5:59:29 PM] [clean]  Initializing...
-         [5:59:29 PM] [clean]  Cleaning build outputs...
-         [5:59:29 PM] [clean]  Succeeded
+         [8:01:48 PM] [clean]  Initializing...
+         [8:01:48 PM] [clean]  Cleaning build outputs...
+         [8:01:48 PM] [clean]  Succeeded
        Done executing task "Exec".
        Using "PpbtTelemetryEndBuildPhase" task from assembly "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
        Task "PpbtTelemetryEndBuildPhase"
-         Task Parameter:BuildPhase=npm-clean
+         Task Parameter:BuildPhaseStartTimeTicks=638468893030739307
          Task Parameter:ProjectType=pcf
-         Task Parameter:BuildPhaseStartTimeTicks=638468819645215549
+         Task Parameter:BuildPhase=npm-clean
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
-           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T12:59:33.0655767+00:00 pcf 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 EndBuildPhase {\"buildPhase\":\"npm-clean\"} "{\"Execution Time(ms)\":8544.0}"
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T15:01:52.0243332+00:00 pcf cbb079be-ceb0-4b99-a9f6-e18699ddbec2 EndBuildPhase {\"buildPhase\":\"npm-clean\"} "{\"Execution Time(ms)\":8950.0}"
        Done executing task "PpbtTelemetryEndBuildPhase".
    2:6>Done building target "PcfClean" in project "pcfaggrid.pcfproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
@@ -3402,13 +3386,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:7>Target "AfterClean" in file "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Clean" depends on it):
        Using "PpbtTelemetryStartBuildPhase" task from assembly "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
        Task "PpbtTelemetryStartBuildPhase"
-         Task Parameter:BuildPhase=clean
          Task Parameter:ProjectType=solution
+         Task Parameter:BuildPhase=clean
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
-           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T12:59:33.1774745+00:00 solution 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 StartBuildPhase {\"buildPhase\":\"clean\",\"Success\":\"true\"} null
-         Output Property: _SolutionCleanStartTimeTicks=638468819731629557
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T15:01:52.0982673+00:00 solution cbb079be-ceb0-4b99-a9f6-e18699ddbec2 StartBuildPhase {\"buildPhase\":\"clean\",\"Success\":\"true\"} null
+         Output Property: _SolutionCleanStartTimeTicks=638468893120915816
        Done executing task "PpbtTelemetryStartBuildPhase".
        Task "Message"
          Task Parameter:Importance=High
@@ -3433,36 +3417,36 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "Message".
        Task "Message" skipped, due to false condition; ('$(SolutionPackageManagedZipFilePath)' != '') was evaluated as ('' != '').
        Task "Delete"
+         Task Parameter:TreatErrorsAsWarnings=True
          Task Parameter:
              Files=
                  obj\Debug\SolutionPackager.log
                  bin\Debug\PowerAppsToolsTemp_sa.zip
-         Task Parameter:TreatErrorsAsWarnings=True
          File "obj\Debug\SolutionPackager.log" doesn't exist. Skipping.
          File "bin\Debug\PowerAppsToolsTemp_sa.zip" doesn't exist. Skipping.
        Done executing task "Delete".
        Using "PpbtTelemetryEndBuildPhase" task from assembly "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\Microsoft.PowerPlatform.MSBuild.Telemetry.Tasks.dll".
        Task "PpbtTelemetryEndBuildPhase"
-         Task Parameter:BuildPhase=clean
+         Task Parameter:BuildPhaseStartTimeTicks=638468893120915816
          Task Parameter:ProjectType=solution
-         Task Parameter:BuildPhaseStartTimeTicks=638468819731629557
+         Task Parameter:BuildPhase=clean
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
-           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T12:59:33.4802997+00:00 solution 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 EndBuildPhase {\"buildPhase\":\"clean\"} "{\"Execution Time(ms)\":317.0}"
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T15:01:52.3518833+00:00 solution cbb079be-ceb0-4b99-a9f6-e18699ddbec2 EndBuildPhase {\"buildPhase\":\"clean\"} "{\"Execution Time(ms)\":260.0}"
        Done executing task "PpbtTelemetryEndBuildPhase".
    1:7>Done building target "AfterClean" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:7>Target "Clean" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Rebuild" depends on it):
    1:7>Done building target "Clean" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:7>Target "StartTelemetryTask" in file "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\build\Microsoft.PowerApps.MSBuild.Solution.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "BeforeBuild" depends on it):
        Task "PpbtTelemetryStartBuildPhase"
-         Task Parameter:BuildPhase=build
          Task Parameter:ProjectType=solution
+         Task Parameter:BuildPhase=build
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.solution\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
-           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T12:59:33.5893763+00:00 solution 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 StartBuildPhase {\"buildPhase\":\"build\",\"Success\":\"true\"} null
-         Output Property: _SolutionBuildStartTimeTicks=638468819735893739
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T15:01:52.4098969+00:00 solution cbb079be-ceb0-4b99-a9f6-e18699ddbec2 StartBuildPhase {\"buildPhase\":\"build\",\"Success\":\"true\"} null
+         Output Property: _SolutionBuildStartTimeTicks=638468893124098955
        Done executing task "PpbtTelemetryStartBuildPhase".
    1:7>Done building target "StartTelemetryTask" in project "PowerAppsToolsTemp_sa.cdsproj".
    1:7>Target "BeforeBuild" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "Build" depends on it):
@@ -3501,7 +3485,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:7>Target "PrepareForBuild" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "CoreBuild" depends on it):
        Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "FindAppConfigFile"
-         Task Parameter:TargetPath=PowerAppsToolsTemp_sa.exe.config
          Task Parameter:
              SecondaryList=
                  bin\Debug\PowerAppsToolsTemp_sa.zip
@@ -3511,6 +3494,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\src\Other\Customizations.xml
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\src\Other\Relationships.xml
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\src\Other\Solution.xml
+         Task Parameter:TargetPath=PowerAppsToolsTemp_sa.exe.config
        Done executing task "FindAppConfigFile".
        Task "MakeDir"
          Task Parameter:
@@ -3529,7 +3513,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    1:7>Target "ResolveProjectReferences" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\PowerAppsToolsTemp_sa\PowerAppsToolsTemp_sa.cdsproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' == 'true' and '..\..\pcfaggrid.pcfproj' != '' and ('' == 'true' or 'true' != 'true') and '17.0' != '10.0' and '..\..\pcfaggrid.pcfproj' != '').
        Task "MSBuild"
-         Task Parameter:BuildInParallel=True
          Task Parameter:
              Projects=
                  ..\..\pcfaggrid.pcfproj
@@ -3551,6 +3534,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                          TargetPlatformMonikers=Windows,Version=7.0
                          Targets=
                          UndefineProperties=;TargetFramework;RuntimeIdentifier
+         Task Parameter:BuildInParallel=True
          Removing Properties for project "..\..\pcfaggrid.pcfproj":
            TargetFramework
            RuntimeIdentifier
@@ -3604,10 +3588,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
    2:7>Target "PrepareForBuild" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "CoreBuild" depends on it):
        Task "FindAppConfigFile"
-         Task Parameter:TargetPath=pcfaggrid.exe.config
          Task Parameter:
              PrimaryList=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.eslintrc.json
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\COMMIT_EDITMSG
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\config
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\description
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\FETCH_HEAD
@@ -3630,13 +3614,42 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\heads\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\main
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.pack
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\packed-refs
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\heads\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\AgGrid\components\AgGrid.tsx
@@ -3651,6 +3664,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfconfig.json
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\README.md
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\tsconfig.json
+         Task Parameter:TargetPath=pcfaggrid.exe.config
        Done executing task "FindAppConfigFile".
        Task "MakeDir"
          Task Parameter:
@@ -3716,6 +3730,10 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
              TargetFrameworkDirectories=
                  C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
                  C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
+         Task Parameter:
+             References=
+                 mscorlib
+                         Pack=false
          Task Parameter:
              PackageOverrides=
                  NETStandard.Library
@@ -3816,10 +3834,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  System.Xml.XPath|4.3.0;
                  System.Xml.XPath.XDocument|4.3.0;
                
-         Task Parameter:
-             References=
-                 mscorlib
-                         Pack=false
          Output Item(s): 
              _ReferencesWithoutConflicts=
                  mscorlib
@@ -3853,14 +3867,59 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Set Property: FindDependenciesOfExternallyResolvedReferences=false
        Using "ResolveAssemblyReference" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ResolveAssemblyReference"
-         Task Parameter:FindSatellites=True
+         Task Parameter:StateFile=obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
+         Task Parameter:
+             AllowedRelatedFileExtensions=
+                 .pdb
+                 .xml
+                 .pri
+                 .dll.config
+                 .exe.config
+         Task Parameter:
+             TargetFrameworkDirectories=
+                 C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+                 C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
          Task Parameter:TargetFrameworkMonikerDisplayName=.NET Framework 4.6.2
-         Task Parameter:TargetFrameworkVersion=v4.6.2
-         Task Parameter:FindRelatedFiles=True
+         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
+         Task Parameter:OutputUnresolvedAssemblyConflicts=False
+         Task Parameter:FullTargetFrameworkSubsetNames=Full
+         Task Parameter:FindSerializationAssemblies=True
+         Task Parameter:Silent=False
          Task Parameter:FindDependenciesOfExternallyResolvedReferences=False
+         Task Parameter:FindSatellites=True
+         Task Parameter:SupportsBindingRedirectGeneration=True
+         Task Parameter:
+             AllowedAssemblyExtensions=
+                 .winmd
+                 .dll
+                 .exe
+         Task Parameter:FullFrameworkFolders=C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
+         Task Parameter:TargetProcessorArchitecture=msil
+         Task Parameter:AutoUnify=False
+         Task Parameter:
+             SearchPaths=
+                 {CandidateAssemblyFiles}
+                 {HintPathFromItem}
+                 {TargetFrameworkDirectory}
+                 {Registry:Software\Microsoft\.NETFramework,v4.6.2,AssemblyFoldersEx}
+                 {AssemblyFolders}
+                 {GAC}
+                 {RawFileName}
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\
+         Task Parameter:WarnOrErrorOnTargetArchitectureMismatch=Warning
+         Task Parameter:FindRelatedFiles=True
+         Task Parameter:TargetedRuntimeVersion=v
+         Task Parameter:TargetFrameworkVersion=v4.6.2
+         Task Parameter:
+             Assemblies=
+                 mscorlib
+                         Pack=false
+                 System.Core
+                         Implicit=true
          Task Parameter:
              CandidateAssemblyFiles=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.eslintrc.json
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\COMMIT_EDITMSG
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\config
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\description
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\FETCH_HEAD
@@ -3883,13 +3942,42 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\heads\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\main
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.pack
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\packed-refs
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\heads\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\AgGrid\components\AgGrid.tsx
@@ -3904,50 +3992,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfconfig.json
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\README.md
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\tsconfig.json
-         Task Parameter:SupportsBindingRedirectGeneration=True
-         Task Parameter:AutoUnify=False
-         Task Parameter:
-             TargetFrameworkDirectories=
-                 C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
-                 C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\Facades\
-         Task Parameter:OutputUnresolvedAssemblyConflicts=False
-         Task Parameter:
-             AllowedRelatedFileExtensions=
-                 .pdb
-                 .xml
-                 .pri
-                 .dll.config
-                 .exe.config
-         Task Parameter:Silent=False
-         Task Parameter:
-             Assemblies=
-                 mscorlib
-                         Pack=false
-                 System.Core
-                         Implicit=true
-         Task Parameter:
-             SearchPaths=
-                 {CandidateAssemblyFiles}
-                 {HintPathFromItem}
-                 {TargetFrameworkDirectory}
-                 {Registry:Software\Microsoft\.NETFramework,v4.6.2,AssemblyFoldersEx}
-                 {AssemblyFolders}
-                 {GAC}
-                 {RawFileName}
-                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\
-         Task Parameter:FullTargetFrameworkSubsetNames=Full
-         Task Parameter:WarnOrErrorOnTargetArchitectureMismatch=Warning
-         Task Parameter:TargetProcessorArchitecture=msil
-         Task Parameter:TargetFrameworkMoniker=.NETFramework,Version=v4.6.2
-         Task Parameter:FullFrameworkFolders=C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\
-         Task Parameter:StateFile=obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-         Task Parameter:
-             AllowedAssemblyExtensions=
-                 .winmd
-                 .dll
-                 .exe
-         Task Parameter:FindSerializationAssemblies=True
-         Task Parameter:TargetedRuntimeVersion=v
          Primary reference "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
              Resolved file path is "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll".
              Reference found at search path location "{TargetFrameworkDirectory}".
@@ -4082,6 +4126,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          Task Parameter:
              Files=
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.eslintrc.json
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\COMMIT_EDITMSG
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\config
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\description
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\FETCH_HEAD
@@ -4104,13 +4149,42 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\heads\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\main
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.pack
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\packed-refs
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\heads\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\AgGrid\components\AgGrid.tsx
@@ -4131,6 +4205,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.eslintrc.json
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.eslintrc.json
                          TargetPath=.eslintrc.json
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\COMMIT_EDITMSG
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\COMMIT_EDITMSG
+                         TargetPath=.git\COMMIT_EDITMSG
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\config
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\config
                          TargetPath=.git\config
@@ -4197,12 +4274,96 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\HEAD
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\HEAD
                          TargetPath=.git\logs\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\main
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\origin\main
+                         TargetPath=.git\logs\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\HEAD
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\HEAD
                          TargetPath=.git\logs\refs\remotes\upstream\HEAD
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\main
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\logs\refs\remotes\upstream\main
                          TargetPath=.git\logs\refs\remotes\upstream\main
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+                         TargetPath=.git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+                         TargetPath=.git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+                         TargetPath=.git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+                         TargetPath=.git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+                         TargetPath=.git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+                         TargetPath=.git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+                         TargetPath=.git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+                         TargetPath=.git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+                         TargetPath=.git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+                         TargetPath=.git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+                         TargetPath=.git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+                         TargetPath=.git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+                         TargetPath=.git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+                         TargetPath=.git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+                         TargetPath=.git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+                         TargetPath=.git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+                         TargetPath=.git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+                         TargetPath=.git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+                         TargetPath=.git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+                         TargetPath=.git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+                         TargetPath=.git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+                         TargetPath=.git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+                         TargetPath=.git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+                         TargetPath=.git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+                         TargetPath=.git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+                         TargetPath=.git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
+                         TargetPath=.git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
                          TargetPath=.git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
@@ -4218,6 +4379,9 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\HEAD
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\HEAD
                          TargetPath=.git\refs\remotes\origin\HEAD
+                 C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\main
+                         OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\origin\main
+                         TargetPath=.git\refs\remotes\origin\main
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\HEAD
                          OriginalItemSpec=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\.git\refs\remotes\upstream\HEAD
                          TargetPath=.git\refs\remotes\upstream\HEAD
@@ -4401,18 +4565,18 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                        Version=4.0.0.0
        Using "Hash" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Hash"
+         Task Parameter:IgnoreCase=True
          Task Parameter:
              ItemsToHash=
                  C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
                  C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
-         Task Parameter:IgnoreCase=True
          Output Property: CoreCompileDependencyHash=fa316545f41def6abd744309354244970185a39e
        Done executing task "Hash".
        Task "WriteLinesToFile"
          Task Parameter:Overwrite=True
          Task Parameter:Lines=fa316545f41def6abd744309354244970185a39e
-         Task Parameter:File=obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:WriteOnlyWhenDifferent=True
+         Task Parameter:File=obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "WriteLinesToFile".
        Added Item(s): FileWrites=obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
    2:7>Done building target "_GenerateCompileDependencyCache" in project "pcfaggrid.pcfproj".
@@ -4478,10 +4642,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
    2:7>Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "IncrementalClean" depends on it):
        Task "ReadLinesFromFile"
          Task Parameter:File=obj\Debug\pcfaggrid.pcfproj.FileListAbsolute.txt
-         Output Item(s): 
-             _CleanUnfilteredPriorFileWrites=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "ReadLinesFromFile".
        Task "ConvertToAbsolutePath"
          Task Parameter:
@@ -4513,30 +4673,26 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                  C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\mscorlib.dll
                  C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.netframework.referenceassemblies.net462\1.0.0\build\.NETFramework\v4.6.2\System.Core.dll
        Done executing task "ConvertToAbsolutePath".
-       Added Item(s): 
-           _CleanPriorFileWrites=
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Task "FindUnderPath"
          Task Parameter:UpdateToAbsolutePaths=True
          Task Parameter:Path=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF
          Comparison path is "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
-         Task Parameter:UpdateToAbsolutePaths=True
          Task Parameter:
              Files=
                  obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
+         Task Parameter:UpdateToAbsolutePaths=True
          Task Parameter:Path=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\
          Comparison path is "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
-         Task Parameter:UpdateToAbsolutePaths=True
          Task Parameter:
              Files=
                  obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
+         Task Parameter:UpdateToAbsolutePaths=True
          Task Parameter:Path=obj\Debug\
          Comparison path is "obj\Debug\".
          Output Item(s): 
@@ -4556,29 +4712,11 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "RemoveDuplicates".
    2:7>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "pcfaggrid.pcfproj".
    2:7>Target "IncrementalClean" in file "C:\Program Files\dotnet\sdk\6.0.413\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "CoreBuild" depends on it):
-       Added Item(s): 
-           _CleanOrphanFileWrites=
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Task "FindUnderPath"
-         Task Parameter:
-             Files=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:Path=C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\
          Comparison path is "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls\".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
-         Task Parameter:
-             Files=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:Path=obj\Debug\
          Comparison path is "obj\Debug\".
        Done executing task "FindUnderPath".
@@ -4587,19 +4725,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
        Done executing task "Delete".
        Added Item(s): 
            _CleanRemainingFileWritesAfterIncrementalClean=
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-               C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Task "RemoveDuplicates"
          Output Item(s): 
              _CleanUniqueRemainingFileWritesAfterIncrementalClean=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
        Done executing task "RemoveDuplicates".
@@ -4607,8 +4739,6 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          Task Parameter:Overwrite=True
          Task Parameter:
              Lines=
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
-                 C:\Users\joshi.dixit\Desktop\pcfaggrid\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.AssemblyReference.cache
                  C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\obj\Debug\pcfaggrid.pcfproj.CoreCompileInputs.cache
          Task Parameter:File=obj\Debug\pcfaggrid.pcfproj.FileListAbsolute.txt
@@ -4628,6 +4758,7 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
            _NpmRunBuildInput=
                .eslintrc.json
                .gitignore
+               .git\COMMIT_EDITMSG
                .git\config
                .git\description
                .git\FETCH_HEAD
@@ -4650,13 +4781,42 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
                .git\logs\HEAD
                .git\logs\refs\heads\main
                .git\logs\refs\remotes\origin\HEAD
+               .git\logs\refs\remotes\origin\main
                .git\logs\refs\remotes\upstream\HEAD
                .git\logs\refs\remotes\upstream\main
+               .git\objects\05\2c81a1c2c7f8b11559bf1337e5cb3350dc7279
+               .git\objects\06\9c7641d62b44870022eba2290c993fe2cd9710
+               .git\objects\0f\9134d5bc835d596a45e616e5ee7c25abb982bc
+               .git\objects\13\289c0eb6ee05e396a4d37dc510b878b6d7585d
+               .git\objects\27\57b8b31b75d4c5dff8f2e3a9d837208d98e8cf
+               .git\objects\27\fc814cd42c82b72484984bf2051ebf76fa0fa2
+               .git\objects\29\6bb361e4ee6e1469b2097e17134835398c28bc
+               .git\objects\33\633d3cd22750af97c4e33162e04316ec0d3a18
+               .git\objects\34\a1d0bbc028c2a43da7433ff5773c285f7153f9
+               .git\objects\3d\ebef4f9aed8d59427f19f786b4db299752483e
+               .git\objects\3e\ad6c7e363f7572a0be1b7c4c6268d6236051e4
+               .git\objects\3f\8ec7ee0ac33b64fa7213fbf361d9ac2c3f00bb
+               .git\objects\4b\d66f8bcbc39f02e649b29b3c072b3d8a959a63
+               .git\objects\55\243ba4587d750021ca696e0c2c3e68cd5d0f99
+               .git\objects\61\af14674c39512b3e7ce71df0c5f217ba1d4bcb
+               .git\objects\73\d0213626e2472e7c73bbd608448532d39ec5bf
+               .git\objects\77\e6ead730ccdab4443a98e6ed9219c439665afc
+               .git\objects\84\8b341a7b3cb9a58ab3c66ad7c927eccb54abb6
+               .git\objects\95\890d5c32c7133d26930e325ff89ba454de0eb6
+               .git\objects\99\39a7744d578d4eeb6b61c0d1b6f85ab2e4f2b0
+               .git\objects\bf\0d396a1181fd6419e6f11b733f5beda48c3e46
+               .git\objects\c4\dfc460f29bbdfb1a1cdef058683b4e3251e6cd
+               .git\objects\d8\3a08db70ec12ffa7b7c3faf7b531a09ae4bbea
+               .git\objects\d9\dd8424e38eaa90eb5e9622e1dc9d318bafb8a8
+               .git\objects\fd\cc291aa6f5ba1a472eb241e81f7ac82fc96d4e
+               .git\objects\fe\cc97b242058ab63f79982de527dfc7db6a6e6a
+               .git\objects\ff\0a711245a4b5702ee84e46dd0352d01a7aed11
                .git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.idx
                .git\objects\pack\pack-1164641f1a8a6223fdeef08ca59588237ad28546.pack
                .git\packed-refs
                .git\refs\heads\main
                .git\refs\remotes\origin\HEAD
+               .git\refs\remotes\origin\main
                .git\refs\remotes\upstream\HEAD
                .git\refs\remotes\upstream\main
                AgGrid\components\AgGrid.tsx
@@ -30784,13 +30944,13 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          Task Parameter:Targets=PcfBuild
    2:7>Target "PcfBuild" in file "C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\build\Microsoft.PowerApps.MSBuild.Pcf.targets" from project "C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\pcfaggrid.pcfproj" (target "_PcfNpmRunBuild" depends on it):
        Task "PpbtTelemetryStartBuildPhase"
-         Task Parameter:BuildPhase=npm-build
          Task Parameter:ProjectType=pcf
+         Task Parameter:BuildPhase=npm-build
          TelemetrySessionService: Calling telemetry recorder with process info: 
            WD: C:\Users\Shaheer Ahmad\.nuget\packages\microsoft.powerapps.msbuild.pcf\1.31.2\tasks\net6.0\ppbtTelemetryRecorder
            FileName: C:\Program Files\dotnet\dotnet.exe
-           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T12:59:35.3710003+00:00 pcf 3eb3708e-8ec9-4328-afdd-a02b8e8e2024 StartBuildPhase {\"buildPhase\":\"npm-build\",\"Success\":\"true\"} null
-         Output Property: _PcfNpmBuildStartTimeTicks=638468819753709982
+           ppbtTelemetryRecorder.dll TrackEvent 2024-03-24T15:01:55.0931136+00:00 pcf cbb079be-ceb0-4b99-a9f6-e18699ddbec2 StartBuildPhase {\"buildPhase\":\"npm-build\",\"Success\":\"true\"} null
+         Output Property: _PcfNpmBuildStartTimeTicks=638468893150931116
        Done executing task "PpbtTelemetryStartBuildPhase".
        Task "Exec"
          Task Parameter:CustomErrorRegularExpression=\[pcf-.+\] \[Error\] .*
@@ -30800,12 +30960,12 @@ Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\
          > pcf-project@1.0.0 build
          > pcf-scripts build --noColor --buildMode development --outDir C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\out\controls --buildSource MSBuild
          
-         [5:59:41 PM] [build]  Initializing...
-         [5:59:41 PM] [build]  Validating manifest...
-         [5:59:41 PM] [build]  Validating control...
-         [5:59:43 PM] [build]  Generating manifest types...
+         [8:01:59 PM] [build]  Initializing...
+         [8:01:59 PM] [build]  Validating manifest...
+         [8:01:59 PM] [build]  Validating control...
+         [8:02:01 PM] [build]  Generating manifest types...
          DeprecationWarning: 'createInterfaceDeclaration' has been deprecated since v4.8.0. Decorators are no longer supported for this function. Callers should switch to an overload that does not accept a 'decorators' parameter.
-         [5:59:43 PM] [build]  Generating design types...
-         [5:59:43 PM] [build]  Running ESLint...
-         [5:59:46 PM] [build]  Compiling and bundling control...
+         [8:02:01 PM] [build]  Generating design types...
+         [8:02:01 PM] [build]  Running ESLint...
+         [8:02:03 PM] [build]  Compiling and bundling control...
          [BABEL] Note: The code generator has deoptimised the styling of C:\Users\Shaheer Ahmad\Desktop\Ag-Grid-In-PCF\node_modules\react-dom\cjs\react-dom.development.js as it exceeds the max of 500KB.

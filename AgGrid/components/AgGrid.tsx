@@ -21,17 +21,15 @@ interface MyAgGridProps {
     apiUrl: string | null;
     enableRowGroupColumns: string | null;
     pivotColumns: string | null;
-    theme: string | null;
+    theme: string;// | null;
     data: { rows: any[] } | undefined;
     aggFuncColumns: string | null;
 }
 
 const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme , data}) => {
     console.log('AG Grid')
-    let themName;
-    const themeName = theme == null || theme == undefined || theme == '' ? 'ag-theme-alpine' : theme;
-
-    const [divClass, setDivClass] = useState(themName);
+    //const themeName = theme == null ? 'ag-theme-alpine' : theme;
+    const [divClass, setDivClass] = useState(theme);
     const [selectedOption, setSelectedOption] = useState<string>('');
     const [rowData, setRowData] = useState<any[]>([]);
     const [autoDefName, setAutoDefName] = useState("athlete");
@@ -46,9 +44,9 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                 else{
                     let data;
                     //const response = await fetch('https://www.ag-grid.com/example-assets/olympic-winners.json');
-                    //const response = await fetch(`${apiUrl}`);
-                    //data = await response.json();
-                    setRowData([]);
+                    const response = await fetch(`${apiUrl}`);
+                    data = await response.json();
+                    setRowData(data);
                 }
                 
             } catch (error) {

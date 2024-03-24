@@ -17,13 +17,27 @@
       <domain></domain>
       -->
     </external-service-usage>
+    <data-set name="records" display-name-key="Data Source">
+      <property-set name="HighlightIndicator"
+        display-name-key="HighlightIndicator_Disp"
+        description-key="HighlightIndicator_Desc"
+        of-type="SingleLine.Text"
+        usage="bound"
+        required="true" />
+    </data-set>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="ApiUrl" display-name-key="ApiUrl" description-key="ApiUrl" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="theme" display-name-key="theme" description-key="theme" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="data" display-name-key="data" description-key="data" of-type="Object" usage="bound" required="true" />
-    <property name="enableRowGroupColumns" display-name-key="enableRowGroupColumns_Key" description-key="enableRowGroupColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="pivotColumns" display-name-key="pivotColumns_Key" description-key="pivotColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="aggFuncColumns" display-name-key="aggFuncColumns_Key" description-key="aggFuncColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="ApiUrl" display-name-key="API URL" description-key="ApiUrl" of-type="SingleLine.Text" usage="bound" required="true" />
+     <property name="theme" display-name-key="Theme" description-key="theme" of-type="Enum" usage="bound" required="true" default-value="ag-theme-quartz">
+      <value name="Quartz Light" display-name-key="Quartz Light" description-key="Light">ag-theme-quartz</value>
+      <value name="Quartz Dark" display-name-key="Quartz Dark" description-key="Dark">ag-theme-quartz-dark</value>
+      <value name="Alpine Light" display-name-key="Alpine Light" description-key="Light">ag-theme-alpine</value>
+      <value name="Alpine Dark" display-name-key="Alpine Dark" description-key="Dark">ag-theme-alpine-dark</value>
+    </property>
+    <!--<property name="theme" display-name-key="theme" description-key="theme" of-type="SingleLine.Text" usage="bound" required="true" />-->
+    <property name="data" display-name-key="Data" description-key="data" of-type="Object" usage="bound" required="true" />
+    <property name="enableRowGroupColumns" display-name-key="Group Columns" description-key="enableRowGroupColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="pivotColumns" display-name-key="Pivot Columns" description-key="pivotColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="aggFuncColumns" display-name-key="Function Columns" description-key="aggFuncColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:

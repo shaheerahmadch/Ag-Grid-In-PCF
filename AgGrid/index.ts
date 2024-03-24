@@ -11,7 +11,7 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
     private enableRowGroupColumns: string | null;
     private pivotColumns: string | null;
     private aggFuncColumns: string | null;
-    private theme: string | null;
+    private theme: string;// | null;
     private data: { rows: any[] } | undefined;
     /**
      * Empty constructor.
