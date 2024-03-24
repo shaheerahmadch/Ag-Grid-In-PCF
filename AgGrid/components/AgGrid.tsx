@@ -13,8 +13,6 @@ import 'ag-grid-community/styles/ag-theme-quartz.css'; // Theme CSS
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import 'ag-grid-community/styles/ag-theme-balham.css';
 import 'ag-grid-enterprise';
-import Theme from './Theme';
-import {option} from './Theme';
 import '../css/grid.css'
 
 interface MyAgGridProps {
@@ -26,9 +24,8 @@ interface MyAgGridProps {
     aggFuncColumns: string | null;
 }
 
-const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme , data}) => {
+const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data }) => {
     console.log('AG Grid')
-    //const themeName = theme == null ? 'ag-theme-alpine' : theme;
     const [divClass, setDivClass] = useState(theme);
     const [selectedOption, setSelectedOption] = useState<string>('');
     const [rowData, setRowData] = useState<any[]>([]);
@@ -40,6 +37,22 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
             try {
                 if(data && data.rows){
                     setRowData(data.rows);
+                    if (data && data.rows && data.rows.length > 0) {
+                        const headers = Object.keys(data.rows[0]);
+                        setAutoDefName(headers[0]);
+        
+                        const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
+                        const enablePivot: string[] = pivotColumns?.split(";") || [];
+                        const aggFunc: string[] = aggFuncColumns?.split(";") || [];
+        
+                        const dynamicColumnDefs: any = headers.map(header => ({
+                            field: header,
+                            enableRowGroup: enableRowGroup.includes(header),
+                            enablePivot: enablePivot.includes(header),
+                            aggFunc: aggFunc.includes(header) ? 'sum' : null,
+                        }));
+                        setColumnDefs(dynamicColumnDefs);
+                    }
                 }
                 else{
                     let data;
@@ -47,6 +60,22 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                     const response = await fetch(`${apiUrl}`);
                     data = await response.json();
                     setRowData(data);
+                    if (data && data.length > 0) {
+                        const headers = Object.keys(data[0]);
+                        setAutoDefName(headers[0]);
+        
+                        const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
+                        const enablePivot: string[] = pivotColumns?.split(";") || [];
+                        const aggFunc: string[] = aggFuncColumns?.split(";") || [];
+        
+                        const dynamicColumnDefs: any = headers.map(header => ({
+                            field: header,
+                            enableRowGroup: enableRowGroup.includes(header),
+                            enablePivot: enablePivot.includes(header),
+                            aggFunc: aggFunc.includes(header) ? 'sum' : null,
+                        }));
+                        setColumnDefs(dynamicColumnDefs);
+                    }
                 }
                 
             } catch (error) {
@@ -54,22 +83,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                 console.log('error')
             }
 
-            if (data && data.rows && data.rows.length > 0) {
-                const headers = Object.keys(data.rows[0]);
-                setAutoDefName(headers[0]);
-
-                const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
-                const enablePivot: string[] = pivotColumns?.split(";") || [];
-                const aggFunc: string[] = aggFuncColumns?.split(";") || [];
-
-                const dynamicColumnDefs: any = headers.map(header => ({
-                    field: header,
-                    enableRowGroup: enableRowGroup.includes(header),
-                    enablePivot: enablePivot.includes(header),
-                    aggFunc: aggFunc.includes(header) ? 'sum' : null,
-                }));
-                setColumnDefs(dynamicColumnDefs);
-            }
+            
         }
         fetchData();
 

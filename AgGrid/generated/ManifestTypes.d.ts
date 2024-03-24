@@ -5,12 +5,11 @@
 // Define IInputs and IOutputs Type. They should match with ControlManifest.
 export interface IInputs {
     ApiUrl: ComponentFramework.PropertyTypes.StringProperty;
-    theme: ComponentFramework.PropertyTypes.EnumProperty<"ag-theme-quartz" | "ag-theme-quartz-dark" | "ag-theme-alpine" | "ag-theme-alpine-dark">;
+    theme: ComponentFramework.PropertyTypes.EnumProperty<"ag-theme-quartz" | "ag-theme-quartz-dark" | "ag-theme-alpine" | "ag-theme-alpine-dark" | "ag-theme-material" | "ag-theme-material-dark" | "ag-theme-balham" | "ag-theme-balham-dark">;
     data: ComponentFramework.PropertyTypes.Property;
     enableRowGroupColumns: ComponentFramework.PropertyTypes.StringProperty;
     pivotColumns: ComponentFramework.PropertyTypes.StringProperty;
     aggFuncColumns: ComponentFramework.PropertyTypes.StringProperty;
-    records: ComponentFramework.PropertyTypes.DataSet;
 }
 export interface IOutputs {
     ApiUrl?: string;
