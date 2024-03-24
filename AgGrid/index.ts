@@ -11,6 +11,8 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
     private enableRowGroupColumns: string | null;
     private pivotColumns: string | null;
     private aggFuncColumns: string | null;
+    private theme: string | null;
+    private data: { rows: any[] } | undefined;
     /**
      * Empty constructor.
      */
@@ -33,11 +35,12 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
 
         const height = context.mode.allocatedHeight;
         const width = context.mode.allocatedWidth;
-
+        this.theme = context.parameters.theme.raw;
         this.apiUrl = context.parameters.ApiUrl.raw;
         this.enableRowGroupColumns = context.parameters.enableRowGroupColumns.raw;
         this.pivotColumns = context.parameters.pivotColumns.raw;
         this.aggFuncColumns = context.parameters.aggFuncColumns.raw;
+        this.data = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
     }
 
 
@@ -50,8 +53,10 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.enableRowGroupColumns = context.parameters.enableRowGroupColumns.raw;
         this.pivotColumns = context.parameters.pivotColumns.raw;
         this.aggFuncColumns = context.parameters.aggFuncColumns.raw;
+        this.theme = context.parameters.theme.raw;
+        this.data = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
         ReactDOM.render(
-            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns}),
+            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data}),
             // React.createElement(MyAgGrid, {apiUrl : this.apiUrl}),
             this.con
             );

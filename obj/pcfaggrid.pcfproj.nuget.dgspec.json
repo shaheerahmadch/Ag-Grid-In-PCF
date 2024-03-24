@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshi.dixit\\Desktop\\pcfaggrid\\pcfaggrid.pcfproj": {}
+    "C:\\Users\\Shaheer Ahmad\\Desktop\\Ag-Grid-In-PCF\\pcfaggrid.pcfproj": {}
   },
   "projects": {
-    "C:\\Users\\joshi.dixit\\Desktop\\pcfaggrid\\pcfaggrid.pcfproj": {
+    "C:\\Users\\Shaheer Ahmad\\Desktop\\Ag-Grid-In-PCF\\pcfaggrid.pcfproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshi.dixit\\Desktop\\pcfaggrid\\pcfaggrid.pcfproj",
+        "projectUniqueName": "C:\\Users\\Shaheer Ahmad\\Desktop\\Ag-Grid-In-PCF\\pcfaggrid.pcfproj",
         "projectName": "pcfaggrid",
-        "projectPath": "C:\\Users\\joshi.dixit\\Desktop\\pcfaggrid\\pcfaggrid.pcfproj",
-        "packagesPath": "C:\\Users\\joshi.dixit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshi.dixit\\Desktop\\pcfaggrid\\obj\\",
+        "projectPath": "C:\\Users\\Shaheer Ahmad\\Desktop\\Ag-Grid-In-PCF\\pcfaggrid.pcfproj",
+        "packagesPath": "C:\\Users\\Shaheer Ahmad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shaheer Ahmad\\Desktop\\Ag-Grid-In-PCF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\joshi.dixit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Shaheer Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net462"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
