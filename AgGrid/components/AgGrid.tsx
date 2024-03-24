@@ -12,6 +12,7 @@ import 'ag-grid-community/styles/ag-grid.css'; // Core CSS
 import 'ag-grid-community/styles/ag-theme-quartz.css'; // Theme CSS
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import 'ag-grid-community/styles/ag-theme-balham.css';
+import 'ag-grid-community/styles/ag-theme-material.css';
 import 'ag-grid-enterprise';
 import '../css/grid.css'
 
@@ -74,13 +75,14 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                             enablePivot: enablePivot.includes(header),
                             aggFunc: aggFunc.includes(header) ? 'sum' : null,
                         }));
+                        
                         setColumnDefs(dynamicColumnDefs);
                     }
                 }
                 
             } catch (error) {
                 setRowData([]);
-                console.log('error')
+                console.log('error: '+error)
             }
 
             
@@ -88,6 +90,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
         fetchData();
 
     }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data])
+    
     const autoGroupColumnDef = useMemo(() => {
         return {
             minWidth: 270,
@@ -129,7 +132,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
  <Theme options={option} onSelect={handleThemeChange} />*/
  // changed heigh from 8vh to 100%
     return (
-        <div className={divClass} style={{ width: '100%', height: '100%' }}>
+        <div className={divClass} style={{ width: '100%', height: '100%', minHeight:'300px' }}>
             < AgGridReact
                 rowData={rowData}
                 columnDefs={columnDefs}

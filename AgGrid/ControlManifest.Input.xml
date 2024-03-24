@@ -17,14 +17,6 @@
       <domain></domain>
       -->
     </external-service-usage>
-   <!-- <data-set name="records" display-name-key="Data Source">
-      <property-set name="HighlightIndicator"
-        display-name-key="HighlightIndicator_Disp"
-        description-key="HighlightIndicator_Desc"
-        of-type="SingleLine.Text"
-        usage="bound"
-        required="true" />
-    </data-set>-->
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="ApiUrl" display-name-key="API URL" description-key="ApiUrl" of-type="SingleLine.Text" usage="bound" required="true" />
      <property name="theme" display-name-key="Theme" description-key="theme" of-type="Enum" usage="bound" required="true" default-value="ag-theme-quartz">
