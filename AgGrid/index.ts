@@ -13,6 +13,7 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
     private aggFuncColumns: string | null;
     private theme: string;// | null;
     private data: { rows: any[] } | undefined;
+    private columnDef: { rows: any[] } | undefined;
    /**
      * Empty constructor.
      */
@@ -41,6 +42,7 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.pivotColumns = context.parameters.pivotColumns.raw;
         this.aggFuncColumns = context.parameters.aggFuncColumns.raw;
         this.data = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
+        this.columnDef = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
         
     }
 
@@ -56,9 +58,10 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.aggFuncColumns = context.parameters.aggFuncColumns.raw;
         this.theme = context.parameters.theme.raw;
         this.data = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
+        this.columnDef = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
        
         ReactDOM.render(
-            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data}),
+            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data,columnDef:this.columnDef}),
             // React.createElement(MyAgGrid, {apiUrl : this.apiUrl}),
             this.con
             );

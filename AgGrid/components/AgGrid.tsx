@@ -22,10 +22,11 @@ interface MyAgGridProps {
     pivotColumns: string | null;
     theme: string;// | null;
     data: { rows: any[] } | undefined;
+    columnDef: any | undefined;
     aggFuncColumns: string | null;
 }
 
-const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data }) => {
+const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data ,columnDef}) => {
     console.log('AG Grid')
     const [divClass, setDivClass] = useState(theme);
     const [rowData, setRowData] = useState<any[]>([]);
@@ -44,14 +45,20 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                         const enableRowGroup: string[] = enableRowGroupColumns?.split(";") || [];
                         const enablePivot: string[] = pivotColumns?.split(";") || [];
                         const aggFunc: string[] = aggFuncColumns?.split(";") || [];
-        
-                        const dynamicColumnDefs: any = headers.map(header => ({
-                            field: header,
-                            enableRowGroup: enableRowGroup.includes(header),
-                            enablePivot: enablePivot.includes(header),
-                            aggFunc: aggFunc.includes(header) ? 'sum' : null,
-                        }));
-                        setColumnDefs(dynamicColumnDefs);
+                        if(columnDef && columnDef.rows && columnDef.rows.length > 0){
+                            const dynamicColumnDefs: any = columnDef.rows;
+                            setColumnDefs(dynamicColumnDefs)
+                        }
+                        else{
+                            const dynamicColumnDefs: any = headers.map(header => ({
+                                field: header,
+                                enableRowGroup: enableRowGroup.includes(header),
+                                enablePivot: enablePivot.includes(header),
+                                aggFunc: aggFunc.includes(header) ? 'sum' : null,
+                            }));
+                            setColumnDefs(dynamicColumnDefs);
+                        }
+                        
                     }
                 }
                 else{
@@ -88,7 +95,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
         }
         fetchData();
 
-    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data])
+    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data, columnDef])
     
     const autoGroupColumnDef = useMemo(() => {
         return {
