@@ -18,6 +18,7 @@
     <property name="enableRowGroupColumns" display-name-key="Group Columns" description-key="enableRowGroupColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true"/>
     <property name="pivotColumns" display-name-key="Pivot Columns" description-key="pivotColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true"/>
     <property name="aggFuncColumns" display-name-key="Function Columns" description-key="aggFuncColumns_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="sideBar" display-name-key="sideBar" description-key="sideBar" of-type="TwoOptions" usage="bound" required="true"/>
     <resources>
       <code path="bundle.js" order="1"/>
     </resources>

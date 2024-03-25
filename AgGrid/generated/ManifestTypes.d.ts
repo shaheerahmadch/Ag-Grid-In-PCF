@@ -11,6 +11,7 @@ export interface IInputs {
     enableRowGroupColumns: ComponentFramework.PropertyTypes.StringProperty;
     pivotColumns: ComponentFramework.PropertyTypes.StringProperty;
     aggFuncColumns: ComponentFramework.PropertyTypes.StringProperty;
+    sideBar: ComponentFramework.PropertyTypes.TwoOptionsProperty;
 }
 export interface IOutputs {
     ApiUrl?: string;
@@ -20,4 +21,5 @@ export interface IOutputs {
     enableRowGroupColumns?: string;
     pivotColumns?: string;
     aggFuncColumns?: string;
+    sideBar?: boolean;
 }
