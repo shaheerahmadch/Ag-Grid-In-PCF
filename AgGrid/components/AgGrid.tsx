@@ -75,14 +75,20 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
                         const enablePivot: string[] = pivotColumns?.split(";") || [];
                         const aggFunc: string[] = aggFuncColumns?.split(";") || [];
         
-                        const dynamicColumnDefs: any = headers.map(header => ({
-                            field: header,
-                            enableRowGroup: enableRowGroup.includes(header),
-                            enablePivot: enablePivot.includes(header),
-                            aggFunc: aggFunc.includes(header) ? 'sum' : null,
-                        }));
+                        if(columnDef && columnDef.rows && columnDef.rows.length > 0){
+                            const dynamicColumnDefs: any = columnDef.rows;
+                            setColumnDefs(dynamicColumnDefs)
+                        }
+                        else{
+                            const dynamicColumnDefs: any = headers.map(header => ({
+                                field: header,
+                                enableRowGroup: enableRowGroup.includes(header),
+                                enablePivot: enablePivot.includes(header),
+                                aggFunc: aggFunc.includes(header) ? 'sum' : null,
+                            }));
+                            setColumnDefs(dynamicColumnDefs);
+                        }
                         
-                        setColumnDefs(dynamicColumnDefs);
                     }
                 }
                 
@@ -138,7 +144,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
  <Theme options={option} onSelect={handleThemeChange} />*/
  // changed heigh from 8vh to 100%
     return (
-        <div className={divClass} style={{ width: '100%', height: '100%', minHeight:'300px' }}>
+        <div className={divClass} style={{ width: '100%', height: '100%'}}>
             < AgGridReact
                 rowData={rowData}
                 columnDefs={columnDefs}
