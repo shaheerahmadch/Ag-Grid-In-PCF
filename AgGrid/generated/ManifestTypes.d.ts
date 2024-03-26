@@ -12,6 +12,7 @@ export interface IInputs {
     pivotColumns: ComponentFramework.PropertyTypes.StringProperty;
     aggFuncColumns: ComponentFramework.PropertyTypes.StringProperty;
     sideBar: ComponentFramework.PropertyTypes.TwoOptionsProperty;
+    editable: ComponentFramework.PropertyTypes.TwoOptionsProperty;
 }
 export interface IOutputs {
     ApiUrl?: string;
@@ -22,4 +23,5 @@ export interface IOutputs {
     pivotColumns?: string;
     aggFuncColumns?: string;
     sideBar?: boolean;
+    editable?: boolean;
 }

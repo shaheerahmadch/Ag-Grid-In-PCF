@@ -25,9 +25,10 @@ interface MyAgGridProps {
     columnDef: any | undefined;
     aggFuncColumns: string | null;
     sideBar : boolean;
+    editable: boolean;
 }
 
-const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data ,columnDef,sideBar}) => {
+const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data ,columnDef,sideBar,editable}) => {
     console.log('AG Grid')
     const [divClass, setDivClass] = useState(theme);
     const [rowData, setRowData] = useState<any[]>([]);
@@ -105,7 +106,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
         }
         fetchData();
 
-    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data, columnDef,sideBar])
+    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data, columnDef,sideBar,editable])
     
     const autoGroupColumnDef = useMemo(() => {
         return {
@@ -128,7 +129,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
             filter: true,
             floatingFilter: true,
             resizable: true,
-            editable: true,
+            editable: editable,
         },
         enableRangeSelection: true,
         statusBar: {
