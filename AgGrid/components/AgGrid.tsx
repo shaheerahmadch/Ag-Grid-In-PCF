@@ -26,9 +26,11 @@ interface MyAgGridProps {
     aggFuncColumns: string | null;
     sideBar : boolean;
     editable: boolean;
+    resizable: boolean;
+    filter: boolean;
 }
 
-const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data ,columnDef,sideBar,editable}) => {
+const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns, theme,data ,columnDef,sideBar,editable,resizable,filter}) => {
     console.log('AG Grid')
     const [divClass, setDivClass] = useState(theme);
     const [rowData, setRowData] = useState<any[]>([]);
@@ -106,7 +108,7 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
         }
         fetchData();
 
-    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data, columnDef,sideBar,editable])
+    }, [apiUrl, enableRowGroupColumns, pivotColumns, aggFuncColumns,theme,data, columnDef,sideBar,editable,resizable,filter])
     
     const autoGroupColumnDef = useMemo(() => {
         return {
@@ -126,9 +128,9 @@ const AgGrid: React.FC<MyAgGridProps> = React.memo(({ apiUrl, enableRowGroupColu
         defaultColDef: {
             flex: 1,
             minWidth: 150,
-            filter: true,
+            filter: filter,
             floatingFilter: true,
-            resizable: true,
+            resizable: resizable,
             editable: editable,
         },
         enableRangeSelection: true,

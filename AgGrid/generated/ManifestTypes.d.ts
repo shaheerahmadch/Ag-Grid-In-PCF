@@ -13,6 +13,8 @@ export interface IInputs {
     aggFuncColumns: ComponentFramework.PropertyTypes.StringProperty;
     sideBar: ComponentFramework.PropertyTypes.TwoOptionsProperty;
     editable: ComponentFramework.PropertyTypes.TwoOptionsProperty;
+    resizable: ComponentFramework.PropertyTypes.TwoOptionsProperty;
+    filter: ComponentFramework.PropertyTypes.TwoOptionsProperty;
 }
 export interface IOutputs {
     ApiUrl?: string;
@@ -24,4 +26,6 @@ export interface IOutputs {
     aggFuncColumns?: string;
     sideBar?: boolean;
     editable?: boolean;
+    resizable?: boolean;
+    filter?: boolean;
 }

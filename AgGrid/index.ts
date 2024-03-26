@@ -17,6 +17,8 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
     private columnDef: { rows: any[] } | undefined;
     private sideBar: boolean;
     private editable : boolean;
+    private resizable : boolean;
+    private filter : boolean;
    /**
      * Empty constructor.
      */
@@ -48,6 +50,8 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.columnDef = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
         this.sideBar = context.parameters.sideBar.raw;
         this.editable = context.parameters.editable.raw;
+        this.resizable = context.parameters.resizable.raw;
+        this.filter = context.parameters.filter.raw;
         
     }
 
@@ -66,9 +70,11 @@ export class AgGrid implements ComponentFramework.StandardControl<IInputs, IOutp
         this.columnDef = context.parameters.data && context.parameters.data.raw ? context.parameters.data.raw : undefined;
         this.sideBar = context.parameters.sideBar.raw;
         this.editable = context.parameters.editable.raw;
+        this.resizable = context.parameters.resizable.raw;
+        this.filter = context.parameters.filter.raw;
        
         ReactDOM.render(
-            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data,columnDef:this.columnDef,sideBar:this.sideBar,editable:this.editable}),
+            React.createElement(MyAgGrid, {apiUrl : this.apiUrl,enableRowGroupColumns : this.enableRowGroupColumns,pivotColumns : this.pivotColumns,aggFuncColumns : this.aggFuncColumns, theme : this.theme, data: this.data,columnDef:this.columnDef,sideBar:this.sideBar,editable:this.editable,resizable:this.resizable,filter:this.filter }),
             // React.createElement(MyAgGrid, {apiUrl : this.apiUrl}),
             this.con
             );
